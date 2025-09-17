@@ -1,51 +1,31 @@
-# Personal Finance Dashboard
+# ReactJS Notes
 
-A fast **frontend-only** money tracker built with **React + styled-components**.  
-Add income/expenses, see KPIs & charts, filter/sort the ledger, export CSV — all saved in **localStorage**.
+Beginner-friendly, no-fluff notes for React—organized topic-by-topic with clear examples. Built with **Vite + React + styled-components + React Router**. Deployed to GitHub Pages.
 
----
+**Live:** https://a2rp.github.io/notes-reactjs/  
+**Code:** https://github.com/a2rp/notes-reactjs
 
-## Features
-
--   **Overview:** Total Balance, This Month Spend/Income, Net Cash Flow, Remaining Budget/Overspent.
--   **Charts:** Daily Income vs Expense (area), Top Categories (bar) with month navigation.
--   **Transactions:** add income/expense, search, quick filters (type/account/envelope), column sorting, totals row.
--   **Undo toasts:** delete + clear month both support **Undo** (react-toastify).
--   **CSV export** for the selected month.
--   **Routing** (React Router), lazy pages, sticky table headers, responsive layout.
+![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=000)
+![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=fff)
+![styled-components](https://img.shields.io/badge/styled--components-%F0%9F%8C%B9-DB7093)
+![Router](https://img.shields.io/badge/React%20Router-v6-CA4245)
 
 ---
 
-## Clone & Run
+## Quick start
 
 ```bash
-# 1) Clone
-git clone https://github.com/a2rp/personal-finance-dashboard.git
-cd personal-finance-dashboard
+# clone
+git clone https://github.com/a2rp/notes-reactjs
+cd notes-reactjs
 
-# 2) Install deps
-npm i
+# install
+npm install
 
-# 3) Start dev server
+# dev
 npm run dev
+
+# build & preview
+npm run build
+npm run preview
 ```
-
-## Home
-
-![alt text](image.png)
-
-## Overview
-
-![alt text](image-1.png)
-
-## Transactions
-
-![alt text](image-2.png)
-
-## Accounts
-
-![alt text](image-3.png)
-
-## Envelopes
-
-![alt text](image-4.png)
