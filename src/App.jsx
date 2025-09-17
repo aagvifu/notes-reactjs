@@ -14,21 +14,28 @@ import 'react-toastify/dist/ReactToastify.css';
 /* Pages */
 const Home = lazy(() => import('./pages/home'));
 const NotFound = lazy(() => import('./pages/notFound'));
-const WhatIsReact = lazy(() => import('./pages/intro/WhatIsReact'));
-const SPAVsMPA = lazy(() => import('./pages/intro/SpaVsMpa'));
-const ProjectSetup = lazy(() => import("./pages/intro/ProjectSetup"));
-const ViteBasics = lazy(() => import("./pages/intro/ViteBasics"));
-const EnvFiles = lazy(() => import("./pages/intro/EnvFiles"));
-const PkgScripts = lazy(() => import("./pages/intro/PkgScripts"));
-const Debugging = lazy(() => import("./pages/intro/Debugging"));
+const WhatIsReact = lazy(() => import('./pages/topics/intro/WhatIsReact'));
+const SPAVsMPA = lazy(() => import('./pages/topics/intro/SpaVsMpa'));
+const ProjectSetup = lazy(() => import("./pages/topics/intro/ProjectSetup"));
+const ViteBasics = lazy(() => import("./pages/topics/intro/ViteBasics"));
+const EnvFiles = lazy(() => import("./pages/topics/intro/EnvFiles"));
+const PkgScripts = lazy(() => import("./pages/topics/intro/PkgScripts"));
+const Debugging = lazy(() => import("./pages/topics/intro/Debugging"));
 
-const JsxBasics = lazy(() => import("./pages/jsx/JSXBasics"));
-const AttrsSpread = lazy(() => import("./pages/jsx/AttrsSpread"));
-const Fragments = lazy(() => import("./pages/jsx/Fragments"));
-const Conditional = lazy(() => import("./pages/jsx/Conditional"));
-const ListsKeys = lazy(() => import("./pages/jsx/ListsKeys"));
-const Reconciliation = lazy(() => import("./pages/jsx/Reconciliation"));
-const RenderCycle = lazy(() => import("./pages/jsx/RenderCycle"));
+const JsxBasics = lazy(() => import("./pages/topics/jsx/JSXBasics"));
+const AttrsSpread = lazy(() => import("./pages/topics/jsx/AttrsSpread"));
+const Fragments = lazy(() => import("./pages/topics/jsx/Fragments"));
+const Conditional = lazy(() => import("./pages/topics/jsx/Conditional"));
+const ListsKeys = lazy(() => import("./pages/topics/jsx/ListsKeys"));
+const Reconciliation = lazy(() => import("./pages/topics/jsx/Reconciliation"));
+const RenderCycle = lazy(() => import("./pages/topics/jsx/RenderCycle"));
+
+const FnComponents = lazy(() => import("./pages/topics/components/FnComponents"));
+const Props = lazy(() => import("./pages/topics/components/Props"));
+const Children = lazy(() => import("./pages/topics/components/Children"));
+const Composition = lazy(() => import("./pages/topics/components/Composition"));
+const ControlledVsUncontrolled = lazy(() => import("./pages/topics/components/ControlledVsUncontrolled"));
+const PresentationalVsContainer = lazy(() => import("./pages/topics/components/PresentationalVsContainer"));
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -73,6 +80,13 @@ const App = () => {
                                 <Route path="/jsx/lists-keys" element={<ListsKeys />} />
                                 <Route path="/jsx/reconciliation" element={<Reconciliation />} />
                                 <Route path="/jsx/render-cycle" element={<RenderCycle />} />
+
+                                <Route path="/components/fn-components" element={<FnComponents />} />
+                                <Route path="/components/props" element={<Props />} />
+                                <Route path="/components/children" element={<Children />} />
+                                <Route path="/components/composition" element={<Composition />} />
+                                <Route path="/components/controlled-vs-uncontrolled" element={<ControlledVsUncontrolled />} />
+                                <Route path="/components/presentational-vs-container" element={<PresentationalVsContainer />} />
 
                                 {/* 404 */}
                                 <Route path="*" element={<NotFound />} />

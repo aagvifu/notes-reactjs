@@ -47,6 +47,15 @@ const NavListCore = () => {
             <NavLink to="/jsx/reconciliation" title="Reconciliation">Reconciliation</NavLink>
             <NavLink to="/jsx/render-cycle" title="Render Cycle">Render Cycle</NavLink>
 
+            {/* Components */}
+            <h3 className="title">Components</h3>
+            <NavLink to="/components/fn-components" title="Function Components">Function Components</NavLink>
+            <NavLink to="/components/props" title="Props">Props</NavLink>
+            <NavLink to="/components/children" title="Children">Children</NavLink>
+            <NavLink to="/components/composition" title="Composition">Composition</NavLink>
+            <NavLink to="/components/controlled-vs-uncontrolled" title="Controlled vs Uncontrolled">Controlled vs Uncontrolled</NavLink>
+            <NavLink to="/components/presentational-vs-container" title="Presentational vs Container">Presentational vs Container</NavLink>
+
         </Styled.Nav>
     );
 };
