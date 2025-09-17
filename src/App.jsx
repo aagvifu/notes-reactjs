@@ -44,6 +44,13 @@ const DerivedState = lazy(() => import("./pages/topics/state/DerivedState"));
 const StateColocation = lazy(() => import("./pages/topics/state/StateColocation"));
 const ImmutableUpdates = lazy(() => import("./pages/topics/state/ImmutableUpdates"));
 
+const UseStateHook = lazy(() => import("./pages/topics/hooksCore/UseStateHook"));
+const UseEffectHook = lazy(() => import("./pages/topics/hooksCore/UseEffectHook"));
+const UseRefHook = lazy(() => import("./pages/topics/hooksCore/UseRefHook"));
+const UseMemoHook = lazy(() => import("./pages/topics/hooksCore/UseMemoHook"));
+const UseCallbackHook = lazy(() => import("./pages/topics/hooksCore/UseCallbackHook"));
+const UseContextHook = lazy(() => import("./pages/topics/hooksCore/UseContextHook"));
+
 
 
 const App = () => {
@@ -103,6 +110,13 @@ const App = () => {
                                 <Route path="/state/derived-state" element={<DerivedState />} />
                                 <Route path="/state/state-colocation" element={<StateColocation />} />
                                 <Route path="/state/immutable-updates" element={<ImmutableUpdates />} />
+
+                                <Route path="/hooks-core/useState" element={<UseStateHook />} />
+                                <Route path="/hooks-core/useEffect" element={<UseEffectHook />} />
+                                <Route path="/hooks-core/useRef" element={<UseRefHook />} />
+                                <Route path="/hooks-core/useMemo" element={<UseMemoHook />} />
+                                <Route path="/hooks-core/useCallback" element={<UseCallbackHook />} />
+                                <Route path="/hooks-core/useContext" element={<UseContextHook />} />
 
 
                                 {/* 404 */}

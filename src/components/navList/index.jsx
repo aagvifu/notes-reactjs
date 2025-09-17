@@ -65,6 +65,15 @@ const NavListCore = () => {
             <NavLink to="/state/state-colocation" title="State Colocation">State Colocation</NavLink>
             <NavLink to="/state/immutable-updates" title="Immutable Updates">Immutable Updates</NavLink>
 
+            {/* Core Hooks */}
+            <h3 className="title">Core Hooks</h3>
+            <NavLink to="/hooks-core/useState" title="useState">useState</NavLink>
+            <NavLink to="/hooks-core/useEffect" title="useEffect">useEffect</NavLink>
+            <NavLink to="/hooks-core/useRef" title="useRef">useRef</NavLink>
+            <NavLink to="/hooks-core/useMemo" title="useMemo">useMemo</NavLink>
+            <NavLink to="/hooks-core/useCallback" title="useCallback">useCallback</NavLink>
+            <NavLink to="/hooks-core/useContext" title="useContext">useContext</NavLink>
+
         </Styled.Nav>
     );
 };
