@@ -37,6 +37,15 @@ const Composition = lazy(() => import("./pages/topics/components/Composition"));
 const ControlledVsUncontrolled = lazy(() => import("./pages/topics/components/ControlledVsUncontrolled"));
 const PresentationalVsContainer = lazy(() => import("./pages/topics/components/PresentationalVsContainer"));
 
+const UseStateBasics = lazy(() => import("./pages/topics/state/UseStateBasics"));
+const Batching = lazy(() => import("./pages/topics/state/Batching"));
+const LiftState = lazy(() => import("./pages/topics/state/LiftState"));
+const DerivedState = lazy(() => import("./pages/topics/state/DerivedState"));
+const StateColocation = lazy(() => import("./pages/topics/state/StateColocation"));
+const ImmutableUpdates = lazy(() => import("./pages/topics/state/ImmutableUpdates"));
+
+
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -87,6 +96,14 @@ const App = () => {
                                 <Route path="/components/composition" element={<Composition />} />
                                 <Route path="/components/controlled-vs-uncontrolled" element={<ControlledVsUncontrolled />} />
                                 <Route path="/components/presentational-vs-container" element={<PresentationalVsContainer />} />
+
+                                <Route path="/state/useState-basics" element={<UseStateBasics />} />
+                                <Route path="/state/batching" element={<Batching />} />
+                                <Route path="/state/lift-state" element={<LiftState />} />
+                                <Route path="/state/derived-state" element={<DerivedState />} />
+                                <Route path="/state/state-colocation" element={<StateColocation />} />
+                                <Route path="/state/immutable-updates" element={<ImmutableUpdates />} />
+
 
                                 {/* 404 */}
                                 <Route path="*" element={<NotFound />} />

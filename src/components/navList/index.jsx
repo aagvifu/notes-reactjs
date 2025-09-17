@@ -56,6 +56,15 @@ const NavListCore = () => {
             <NavLink to="/components/controlled-vs-uncontrolled" title="Controlled vs Uncontrolled">Controlled vs Uncontrolled</NavLink>
             <NavLink to="/components/presentational-vs-container" title="Presentational vs Container">Presentational vs Container</NavLink>
 
+            {/* State & Data Flow */}
+            <h3 className="title">State &amp; Data Flow</h3>
+            <NavLink to="/state/useState-basics" title="useState Basics">useState Basics</NavLink>
+            <NavLink to="/state/batching" title="Batching">Batching</NavLink>
+            <NavLink to="/state/lift-state" title="Lift State">Lift State</NavLink>
+            <NavLink to="/state/derived-state" title="Derived State">Derived State</NavLink>
+            <NavLink to="/state/state-colocation" title="State Colocation">State Colocation</NavLink>
+            <NavLink to="/state/immutable-updates" title="Immutable Updates">Immutable Updates</NavLink>
+
         </Styled.Nav>
     );
 };
