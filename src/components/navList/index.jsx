@@ -74,6 +74,29 @@ const NavListCore = () => {
             <NavLink to="/hooks-core/useCallback" title="useCallback">useCallback</NavLink>
             <NavLink to="/hooks-core/useContext" title="useContext">useContext</NavLink>
 
+            {/* Advanced Hooks */}
+            <h3 className="title">Advanced Hooks</h3>
+            <NavLink to="/hooks-adv/useReducer" title="useReducer">useReducer</NavLink>
+            <NavLink to="/hooks-adv/useLayoutEffect" title="useLayoutEffect">useLayoutEffect</NavLink>
+            <NavLink to="/hooks-adv/forwardRef" title="forwardRef">forwardRef</NavLink>
+            <NavLink to="/hooks-adv/useImperativeHandle" title="useImperativeHandle">useImperativeHandle</NavLink>
+            <NavLink to="/hooks-adv/useId" title="useId">useId</NavLink>
+            <NavLink to="/hooks-adv/useSyncExternalStore" title="useSyncExternalStore">useSyncExternalStore</NavLink>
+            <NavLink to="/hooks-adv/useTransition" title="useTransition">useTransition</NavLink>
+            <NavLink to="/hooks-adv/useDeferredValue" title="useDeferredValue">useDeferredValue</NavLink>
+            <NavLink to="/hooks-adv/custom-hooks" title="Custom Hooks">Custom Hooks</NavLink>
+
+            {/* DOM & Events */}
+            <h3 className="title">DOM &amp; Events</h3>
+            <NavLink to="/dom-events/synthetic-events" title="Synthetic Events">Synthetic Events</NavLink>
+            <NavLink to="/dom-events/event-bubbling" title="Event Bubbling & Capturing">Event Bubbling</NavLink>
+            <NavLink to="/dom-events/focus-management" title="Focus Management">Focus Management</NavLink>
+            <NavLink to="/dom-events/scroll-management" title="Scroll Management">Scroll Management</NavLink>
+            <NavLink to="/dom-events/portals" title="Portals">Portals</NavLink>
+            <NavLink to="/dom-events/measure-layout" title="Measure &amp; Layout">Measure &amp; Layout</NavLink>
+
+
+
         </Styled.Nav>
     );
 };

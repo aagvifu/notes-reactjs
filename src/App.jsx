@@ -51,7 +51,22 @@ const UseMemoHook = lazy(() => import("./pages/topics/hooksCore/UseMemoHook"));
 const UseCallbackHook = lazy(() => import("./pages/topics/hooksCore/UseCallbackHook"));
 const UseContextHook = lazy(() => import("./pages/topics/hooksCore/UseContextHook"));
 
+const UseReducerHook = lazy(() => import("./pages/topics/hooksAdv/UseReducerHook"));
+const UseLayoutEffectHook = lazy(() => import("./pages/topics/hooksAdv/UseLayoutEffectHook"));
+const ForwardRefHook = lazy(() => import("./pages/topics/hooksAdv/ForwardRefHook"));
+const UseImperativeHandleHook = lazy(() => import("./pages/topics/hooksAdv/UseImperativeHandleHook"));
+const UseIdHook = lazy(() => import("./pages/topics/hooksAdv/UseIdHook"));
+const UseSyncExternalStoreHook = lazy(() => import("./pages/topics/hooksAdv/UseSyncExternalStoreHook"));
+const UseTransitionHook = lazy(() => import("./pages/topics/hooksAdv/UseTransitionHook"));
+const UseDeferredValueHook = lazy(() => import("./pages/topics/hooksAdv/UseDeferredValueHook"));
+const CustomHooks = lazy(() => import("./pages/topics/hooksAdv/CustomHooks"));
 
+const SyntheticEvents = lazy(() => import("./pages/topics/domEvents/SyntheticEvents"));
+const EventBubbling = lazy(() => import("./pages/topics/domEvents/EventBubbling"));
+const FocusManagement = lazy(() => import("./pages/topics/domEvents/FocusManagement"));
+const ScrollManagement = lazy(() => import("./pages/topics/domEvents/ScrollManagement"));
+const Portals = lazy(() => import("./pages/topics/domEvents/Portals"));
+const MeasureLayout = lazy(() => import("./pages/topics/domEvents/MeasureLayout"));
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -81,42 +96,73 @@ const App = () => {
                                 <Route path="/" element={<Navigate to="/home" />} />
                                 <Route path="/home" element={<Home />} />
 
-                                <Route path="/intro/what-is-react" element={<WhatIsReact />} />
-                                <Route path="/intro/spa-vs-mpa" element={<SPAVsMPA />} />
-                                <Route path="/intro/project-setup" element={<ProjectSetup />} />
-                                <Route path="/intro/vite-basics" element={<ViteBasics />} />
-                                <Route path="/intro/env-files" element={<EnvFiles />} />
-                                <Route path="/intro/pkg-scripts" element={<PkgScripts />} />
-                                <Route path="/intro/debugging" element={<Debugging />} />
-                                <Route path="/jsx/jsx-basics" element={<JsxBasics />} />
+                                <>
+                                    <Route path="/intro/what-is-react" element={<WhatIsReact />} />
+                                    <Route path="/intro/spa-vs-mpa" element={<SPAVsMPA />} />
+                                    <Route path="/intro/project-setup" element={<ProjectSetup />} />
+                                    <Route path="/intro/vite-basics" element={<ViteBasics />} />
+                                    <Route path="/intro/env-files" element={<EnvFiles />} />
+                                    <Route path="/intro/pkg-scripts" element={<PkgScripts />} />
+                                    <Route path="/intro/debugging" element={<Debugging />} />
+                                    <Route path="/jsx/jsx-basics" element={<JsxBasics />} />
+                                </>
 
-                                <Route path="/jsx/attrs-spread" element={<AttrsSpread />} />
-                                <Route path="/jsx/fragments" element={<Fragments />} />
-                                <Route path="/jsx/conditional" element={<Conditional />} />
-                                <Route path="/jsx/lists-keys" element={<ListsKeys />} />
-                                <Route path="/jsx/reconciliation" element={<Reconciliation />} />
-                                <Route path="/jsx/render-cycle" element={<RenderCycle />} />
+                                <>
+                                    <Route path="/jsx/attrs-spread" element={<AttrsSpread />} />
+                                    <Route path="/jsx/fragments" element={<Fragments />} />
+                                    <Route path="/jsx/conditional" element={<Conditional />} />
+                                    <Route path="/jsx/lists-keys" element={<ListsKeys />} />
+                                    <Route path="/jsx/reconciliation" element={<Reconciliation />} />
+                                    <Route path="/jsx/render-cycle" element={<RenderCycle />} />
+                                </>
 
-                                <Route path="/components/fn-components" element={<FnComponents />} />
-                                <Route path="/components/props" element={<Props />} />
-                                <Route path="/components/children" element={<Children />} />
-                                <Route path="/components/composition" element={<Composition />} />
-                                <Route path="/components/controlled-vs-uncontrolled" element={<ControlledVsUncontrolled />} />
-                                <Route path="/components/presentational-vs-container" element={<PresentationalVsContainer />} />
+                                <>
+                                    <Route path="/components/fn-components" element={<FnComponents />} />
+                                    <Route path="/components/props" element={<Props />} />
+                                    <Route path="/components/children" element={<Children />} />
+                                    <Route path="/components/composition" element={<Composition />} />
+                                    <Route path="/components/controlled-vs-uncontrolled" element={<ControlledVsUncontrolled />} />
+                                    <Route path="/components/presentational-vs-container" element={<PresentationalVsContainer />} />
+                                </>
 
-                                <Route path="/state/useState-basics" element={<UseStateBasics />} />
-                                <Route path="/state/batching" element={<Batching />} />
-                                <Route path="/state/lift-state" element={<LiftState />} />
-                                <Route path="/state/derived-state" element={<DerivedState />} />
-                                <Route path="/state/state-colocation" element={<StateColocation />} />
-                                <Route path="/state/immutable-updates" element={<ImmutableUpdates />} />
+                                <>
+                                    <Route path="/state/useState-basics" element={<UseStateBasics />} />
+                                    <Route path="/state/batching" element={<Batching />} />
+                                    <Route path="/state/lift-state" element={<LiftState />} />
+                                    <Route path="/state/derived-state" element={<DerivedState />} />
+                                    <Route path="/state/state-colocation" element={<StateColocation />} />
+                                    <Route path="/state/immutable-updates" element={<ImmutableUpdates />} />
+                                </>
 
-                                <Route path="/hooks-core/useState" element={<UseStateHook />} />
-                                <Route path="/hooks-core/useEffect" element={<UseEffectHook />} />
-                                <Route path="/hooks-core/useRef" element={<UseRefHook />} />
-                                <Route path="/hooks-core/useMemo" element={<UseMemoHook />} />
-                                <Route path="/hooks-core/useCallback" element={<UseCallbackHook />} />
-                                <Route path="/hooks-core/useContext" element={<UseContextHook />} />
+                                <>
+                                    <Route path="/hooks-core/useState" element={<UseStateHook />} />
+                                    <Route path="/hooks-core/useEffect" element={<UseEffectHook />} />
+                                    <Route path="/hooks-core/useRef" element={<UseRefHook />} />
+                                    <Route path="/hooks-core/useMemo" element={<UseMemoHook />} />
+                                    <Route path="/hooks-core/useCallback" element={<UseCallbackHook />} />
+                                    <Route path="/hooks-core/useContext" element={<UseContextHook />} />
+                                </>
+
+                                <>
+                                    <Route path="/hooks-adv/useReducer" element={<UseReducerHook />} />
+                                    <Route path="/hooks-adv/useLayoutEffect" element={<UseLayoutEffectHook />} />
+                                    <Route path="/hooks-adv/forwardRef" element={<ForwardRefHook />} />
+                                    <Route path="/hooks-adv/useImperativeHandle" element={<UseImperativeHandleHook />} />
+                                    <Route path="/hooks-adv/useId" element={<UseIdHook />} />
+                                    <Route path="/hooks-adv/useSyncExternalStore" element={<UseSyncExternalStoreHook />} />
+                                    <Route path="/hooks-adv/useTransition" element={<UseTransitionHook />} />
+                                    <Route path="/hooks-adv/useDeferredValue" element={<UseDeferredValueHook />} />
+                                    <Route path="/hooks-adv/custom-hooks" element={<CustomHooks />} />
+                                </>
+
+                                <>
+                                    <Route path="/dom-events/synthetic-events" element={<SyntheticEvents />} />
+                                    <Route path="/dom-events/event-bubbling" element={<EventBubbling />} />
+                                    <Route path="/dom-events/focus-management" element={<FocusManagement />} />
+                                    <Route path="/dom-events/scroll-management" element={<ScrollManagement />} />
+                                    <Route path="/dom-events/portals" element={<Portals />} />
+                                    <Route path="/dom-events/measure-layout" element={<MeasureLayout />} />
+                                </>
 
 
                                 {/* 404 */}
