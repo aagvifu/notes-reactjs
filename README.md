@@ -2,6 +2,8 @@
 
 Beginner-friendly, no-fluff notes for React—organized topic-by-topic with clear examples. Built with **Vite + React + styled-components + React Router**. Deployed to GitHub Pages.
 
+![alt text](image.png)
+
 **Live:** https://a2rp.github.io/notes-reactjs/  
 **Code:** https://github.com/a2rp/notes-reactjs
 

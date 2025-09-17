@@ -23,7 +23,12 @@ const PkgScripts = lazy(() => import("./pages/intro/PkgScripts"));
 const Debugging = lazy(() => import("./pages/intro/Debugging"));
 
 const JsxBasics = lazy(() => import("./pages/jsx/JSXBasics"));
-
+const AttrsSpread = lazy(() => import("./pages/jsx/AttrsSpread"));
+const Fragments = lazy(() => import("./pages/jsx/Fragments"));
+const Conditional = lazy(() => import("./pages/jsx/Conditional"));
+const ListsKeys = lazy(() => import("./pages/jsx/ListsKeys"));
+const Reconciliation = lazy(() => import("./pages/jsx/Reconciliation"));
+const RenderCycle = lazy(() => import("./pages/jsx/RenderCycle"));
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -52,6 +57,7 @@ const App = () => {
                                 {/* Basics */}
                                 <Route path="/" element={<Navigate to="/home" />} />
                                 <Route path="/home" element={<Home />} />
+
                                 <Route path="/intro/what-is-react" element={<WhatIsReact />} />
                                 <Route path="/intro/spa-vs-mpa" element={<SPAVsMPA />} />
                                 <Route path="/intro/project-setup" element={<ProjectSetup />} />
@@ -60,6 +66,13 @@ const App = () => {
                                 <Route path="/intro/pkg-scripts" element={<PkgScripts />} />
                                 <Route path="/intro/debugging" element={<Debugging />} />
                                 <Route path="/jsx/jsx-basics" element={<JsxBasics />} />
+
+                                <Route path="/jsx/attrs-spread" element={<AttrsSpread />} />
+                                <Route path="/jsx/fragments" element={<Fragments />} />
+                                <Route path="/jsx/conditional" element={<Conditional />} />
+                                <Route path="/jsx/lists-keys" element={<ListsKeys />} />
+                                <Route path="/jsx/reconciliation" element={<Reconciliation />} />
+                                <Route path="/jsx/render-cycle" element={<RenderCycle />} />
 
                                 {/* 404 */}
                                 <Route path="*" element={<NotFound />} />

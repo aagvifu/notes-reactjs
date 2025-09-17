@@ -40,12 +40,12 @@ const NavListCore = () => {
             {/* JSX & Rendering */}
             <h3 className="title">JSX &amp; Rendering</h3>
             <NavLink to="/jsx/jsx-basics" title="JSX Basics">JSX Basics</NavLink>
-            {/* <NavLink to="/jsx/attrs-spread" title="Attributes & Spread">Attributes &amp; Spread</NavLink>
+            <NavLink to="/jsx/attrs-spread" title="Attributes & Spread">Attributes &amp; Spread</NavLink>
             <NavLink to="/jsx/fragments" title="Fragments">Fragments</NavLink>
             <NavLink to="/jsx/conditional" title="Conditional Rendering">Conditional Rendering</NavLink>
             <NavLink to="/jsx/lists-keys" title="Lists & Keys">Lists &amp; Keys</NavLink>
             <NavLink to="/jsx/reconciliation" title="Reconciliation">Reconciliation</NavLink>
-            <NavLink to="/jsx/render-cycle" title="Render Cycle">Render Cycle</NavLink> */}
+            <NavLink to="/jsx/render-cycle" title="Render Cycle">Render Cycle</NavLink>
 
         </Styled.Nav>
     );
