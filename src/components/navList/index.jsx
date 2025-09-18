@@ -362,6 +362,14 @@ const NavListCore = () => {
                 <NavLink to="/security/auth-basics" title="Auth Basics">Auth Basics</NavLink>
                 <NavLink to="/security/supply-chain" title="Supply Chain Security">Supply Chain</NavLink>
 
+                {/* Networking */}
+                <h3 className="title">Networking</h3>
+                <NavLink to="/networking/rest-patterns" title="REST Patterns">REST Patterns</NavLink>
+                <NavLink to="/networking/graphql-clients" title="GraphQL Clients">GraphQL Clients</NavLink>
+                <NavLink to="/networking/websockets" title="WebSockets">WebSockets</NavLink>
+                <NavLink to="/networking/file-uploads" title="File Uploads">File Uploads</NavLink>
+                <NavLink to="/networking/offline-sync" title="Offline Sync">Offline Sync</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}

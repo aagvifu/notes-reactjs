@@ -194,6 +194,11 @@ const CorsCookies = lazy(() => import("./pages/topics/security/CorsCookies"));
 const AuthBasics = lazy(() => import("./pages/topics/security/AuthBasics"));
 const SupplyChain = lazy(() => import("./pages/topics/security/SupplyChain"));
 
+const RestPatterns = lazy(() => import("./pages/topics/networking/RestPatterns"));
+const GraphqlClients = lazy(() => import("./pages/topics/networking/GraphqlClients"));
+const WebSockets = lazy(() => import("./pages/topics/networking/WebSockets"));
+const FileUploads = lazy(() => import("./pages/topics/networking/FileUploads"));
+const OfflineSync = lazy(() => import("./pages/topics/networking/OfflineSync"));
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -461,6 +466,14 @@ const App = () => {
                                     <Route path="/security/cors-cookies" element={<CorsCookies />} />
                                     <Route path="/security/auth-basics" element={<AuthBasics />} />
                                     <Route path="/security/supply-chain" element={<SupplyChain />} />
+                                </>
+
+                                <>
+                                    <Route path="/networking/rest-patterns" element={<RestPatterns />} />
+                                    <Route path="/networking/graphql-clients" element={<GraphqlClients />} />
+                                    <Route path="/networking/websockets" element={<WebSockets />} />
+                                    <Route path="/networking/file-uploads" element={<FileUploads />} />
+                                    <Route path="/networking/offline-sync" element={<OfflineSync />} />
                                 </>
 
                                 {/* 404 */}
