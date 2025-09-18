@@ -95,6 +95,19 @@ const NavListCore = () => {
             <NavLink to="/dom-events/portals" title="Portals">Portals</NavLink>
             <NavLink to="/dom-events/measure-layout" title="Measure &amp; Layout">Measure &amp; Layout</NavLink>
 
+            {/* Forms & Validation */}
+            <h3 className="title">Forms &amp; Validation</h3>
+            <NavLink to="/forms/controlled" title="Controlled Inputs">Controlled Inputs</NavLink>
+            <NavLink to="/forms/uncontrolled" title="Uncontrolled Inputs">Uncontrolled Inputs</NavLink>
+            <NavLink to="/forms/debounced-inputs" title="Debounced Inputs">Debounced Inputs</NavLink>
+            <NavLink to="/forms/html5-validation" title="HTML5 Validation">HTML5 Validation</NavLink>
+            <NavLink to="/forms/custom-validation" title="Custom Validation">Custom Validation</NavLink>
+            <NavLink to="/forms/react-hook-form" title="React Hook Form">React Hook Form</NavLink>
+            <NavLink to="/forms/formik" title="Formik">Formik</NavLink>
+            <NavLink to="/forms/schema-yup-zod" title="Schema Validation (Yup/Zod)">Schema (Yup/Zod)</NavLink>
+            <NavLink to="/forms/file-upload" title="File Upload">File Upload</NavLink>
+            <NavLink to="/forms/drag-drop" title="Drag &amp; Drop">Drag &amp; Drop</NavLink>
+            <NavLink to="/forms/forms-a11y" title="Forms Accessibility (a11y)">Forms Accessibility</NavLink>
 
 
         </Styled.Nav>

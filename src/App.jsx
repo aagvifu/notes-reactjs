@@ -68,6 +68,19 @@ const ScrollManagement = lazy(() => import("./pages/topics/domEvents/ScrollManag
 const Portals = lazy(() => import("./pages/topics/domEvents/Portals"));
 const MeasureLayout = lazy(() => import("./pages/topics/domEvents/MeasureLayout"));
 
+const Controlled = lazy(() => import("./pages/topics/forms/Controlled"));
+const Uncontrolled = lazy(() => import("./pages/topics/forms/Uncontrolled"));
+const DebouncedInputs = lazy(() => import("./pages/topics/forms/DebouncedInputs"));
+const Html5Validation = lazy(() => import("./pages/topics/forms/Html5Validation"));
+const CustomValidation = lazy(() => import("./pages/topics/forms/CustomValidation"));
+const ReactHookForm = lazy(() => import("./pages/topics/forms/ReactHookForm"));
+const Formik = lazy(() => import("./pages/topics/forms/Formik"));
+const SchemaYupZod = lazy(() => import("./pages/topics/forms/SchemaYupZod"));
+const FileUpload = lazy(() => import("./pages/topics/forms/FileUpload"));
+const DragDrop = lazy(() => import("./pages/topics/forms/DragDrop"));
+const FormsA11y = lazy(() => import("./pages/topics/forms/FormsA11y"));
+
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -164,6 +177,19 @@ const App = () => {
                                     <Route path="/dom-events/measure-layout" element={<MeasureLayout />} />
                                 </>
 
+                                <>
+                                    <Route path="/forms/controlled" element={<Controlled />} />
+                                    <Route path="/forms/uncontrolled" element={<Uncontrolled />} />
+                                    <Route path="/forms/debounced-inputs" element={<DebouncedInputs />} />
+                                    <Route path="/forms/html5-validation" element={<Html5Validation />} />
+                                    <Route path="/forms/custom-validation" element={<CustomValidation />} />
+                                    <Route path="/forms/react-hook-form" element={<ReactHookForm />} />
+                                    <Route path="/forms/formik" element={<Formik />} />
+                                    <Route path="/forms/schema-yup-zod" element={<SchemaYupZod />} />
+                                    <Route path="/forms/file-upload" element={<FileUpload />} />
+                                    <Route path="/forms/drag-drop" element={<DragDrop />} />
+                                    <Route path="/forms/forms-a11y" element={<FormsA11y />} />
+                                </>
 
                                 {/* 404 */}
                                 <Route path="*" element={<NotFound />} />
