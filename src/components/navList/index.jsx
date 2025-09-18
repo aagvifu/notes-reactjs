@@ -110,6 +110,19 @@ const NavListCore = () => {
             <NavLink to="/forms/forms-a11y" title="Forms Accessibility (a11y)">Forms Accessibility</NavLink>
 
 
+            {/* Styling */}
+            <h3 className="title">Styling</h3>
+            <NavLink to="/styling/global-css" title="Global CSS">Global CSS</NavLink>
+            <NavLink to="/styling/css-modules" title="CSS Modules">CSS Modules</NavLink>
+            <NavLink to="/styling/styled-components" title="styled-components">styled-components</NavLink>
+            <NavLink to="/styling/themes" title="Themes">Themes</NavLink>
+            <NavLink to="/styling/tokens" title="Design Tokens">Design Tokens</NavLink>
+            <NavLink to="/styling/css-variables" title="CSS Variables">CSS Variables</NavLink>
+            <NavLink to="/styling/responsive" title="Responsive Design">Responsive Design</NavLink>
+            <NavLink to="/styling/container-queries" title="Container Queries">Container Queries</NavLink>
+            <NavLink to="/styling/icons" title="Icons">Icons</NavLink>
+
+
         </Styled.Nav>
     );
 };

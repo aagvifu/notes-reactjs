@@ -80,6 +80,16 @@ const FileUpload = lazy(() => import("./pages/topics/forms/FileUpload"));
 const DragDrop = lazy(() => import("./pages/topics/forms/DragDrop"));
 const FormsA11y = lazy(() => import("./pages/topics/forms/FormsA11y"));
 
+const GlobalCss = lazy(() => import("./pages/topics/styling/GlobalCss"));
+const CssModules = lazy(() => import("./pages/topics/styling/CssModules"));
+const StyledComponents = lazy(() => import("./pages/topics/styling/StyledComponents"));
+const Themes = lazy(() => import("./pages/topics/styling/Themes"));
+const Tokens = lazy(() => import("./pages/topics/styling/Tokens"));
+const CssVariables = lazy(() => import("./pages/topics/styling/CssVariables"));
+const Responsive = lazy(() => import("./pages/topics/styling/Responsive"));
+const ContainerQueries = lazy(() => import("./pages/topics/styling/ContainerQueries"));
+const Icons = lazy(() => import("./pages/topics/styling/Icons"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -189,6 +199,18 @@ const App = () => {
                                     <Route path="/forms/file-upload" element={<FileUpload />} />
                                     <Route path="/forms/drag-drop" element={<DragDrop />} />
                                     <Route path="/forms/forms-a11y" element={<FormsA11y />} />
+                                </>
+
+                                <>
+                                    <Route path="/styling/global-css" element={<GlobalCss />} />
+                                    <Route path="/styling/css-modules" element={<CssModules />} />
+                                    <Route path="/styling/styled-components" element={<StyledComponents />} />
+                                    <Route path="/styling/themes" element={<Themes />} />
+                                    <Route path="/styling/tokens" element={<Tokens />} />
+                                    <Route path="/styling/css-variables" element={<CssVariables />} />
+                                    <Route path="/styling/responsive" element={<Responsive />} />
+                                    <Route path="/styling/container-queries" element={<ContainerQueries />} />
+                                    <Route path="/styling/icons" element={<Icons />} />
                                 </>
 
                                 {/* 404 */}
