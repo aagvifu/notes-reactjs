@@ -148,6 +148,12 @@ const FormatJS = lazy(() => import("./pages/topics/i18n/FormatJS"));
 const PluralsDatesNumbers = lazy(() => import("./pages/topics/i18n/PluralsDatesNumbers"));
 const RtlSupport = lazy(() => import("./pages/topics/i18n/RtlSupport"));
 
+const CssTransitions = lazy(() => import("./pages/topics/animations/CssTransitions"));
+const CssAnimations = lazy(() => import("./pages/topics/animations/CssAnimations"));
+const FramerMotion = lazy(() => import("./pages/topics/animations/FramerMotion"));
+const ScrollEffects = lazy(() => import("./pages/topics/animations/ScrollEffects"));
+const AnimationPerformance = lazy(() => import("./pages/topics/animations/AnimationPerformance"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -164,7 +170,7 @@ const App = () => {
                         <img src={ar_logo} alt="ar_logo" />
                     </NavLink>
                 </Styled.LogoLinkWrapper>
-                <Styled.Heading><NavLink to="/" title="a2rp: an Ashish Ranjan presentation">a2rp</NavLink></Styled.Heading>
+                <Styled.Heading><NavLink to="/" title="ReactJS Notes">ReactJS Notes</NavLink></Styled.Heading>
             </Styled.Header>
 
             <Styled.Main>
@@ -350,6 +356,14 @@ const App = () => {
                                     <Route path="/i18n/formatjs" element={<FormatJS />} />
                                     <Route path="/i18n/plurals-dates-numbers" element={<PluralsDatesNumbers />} />
                                     <Route path="/i18n/rtl-support" element={<RtlSupport />} />
+                                </>
+
+                                <>
+                                    <Route path="/animations/css-transitions" element={<CssTransitions />} />
+                                    <Route path="/animations/css-animations" element={<CssAnimations />} />
+                                    <Route path="/animations/framer-motion" element={<FramerMotion />} />
+                                    <Route path="/animations/scroll-effects" element={<ScrollEffects />} />
+                                    <Route path="/animations/anim-perf" element={<AnimationPerformance />} />
                                 </>
 
                                 {/* 404 */}

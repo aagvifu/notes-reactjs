@@ -193,6 +193,13 @@ const NavListCore = () => {
             <NavLink to="/i18n/plurals-dates-numbers" title="Plurals, Dates & Numbers">Plurals, Dates &amp; Numbers</NavLink>
             <NavLink to="/i18n/rtl-support" title="RTL Support">RTL Support</NavLink>
 
+            {/* Animations */}
+            <h3 className="title">Animations</h3>
+            <NavLink to="/animations/css-transitions" title="CSS Transitions">CSS Transitions</NavLink>
+            <NavLink to="/animations/css-animations" title="CSS Keyframe Animations">CSS Animations</NavLink>
+            <NavLink to="/animations/framer-motion" title="Framer Motion">Framer Motion</NavLink>
+            <NavLink to="/animations/scroll-effects" title="Scroll-based Effects">Scroll Effects</NavLink>
+            <NavLink to="/animations/anim-perf" title="Animation Performance">Animation Performance</NavLink>
 
         </Styled.Nav>
     );
