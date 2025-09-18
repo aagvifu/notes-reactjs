@@ -71,6 +71,28 @@ const Header = styled.div`
     border-bottom: 1px solid #333;
 `;
 
+const LogoLinkWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    a {
+        border: 1px solid #333;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 40px;
+        width: 50px;
+
+        img {
+            /* width: 100px; */
+            height: 22px;
+        }
+    }
+`;
+
 const NavLinkWrapper = styled.div`
     box-shadow: 0 0 1px 1px #333 inset;
     border-radius: 6px;
@@ -156,6 +178,7 @@ const Footer = styled.div`
 export const Styled = {
     Wrapper,
     Header,
+    LogoLinkWrapper,
     NavLinkWrapper,
     Heading,
     Main,

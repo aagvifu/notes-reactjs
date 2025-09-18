@@ -7,6 +7,8 @@ import { Box, CircularProgress } from '@mui/material'
 import Footer from './components/footer'
 import NavList from './components/navList'
 
+import ar_logo from "./assets/ar_logo.png";
+
 // ✅ Toasts
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -154,10 +156,15 @@ const App = () => {
     return (
         <Styled.Wrapper>
             <Styled.Header>
-                <Styled.NavLinkWrapper onClick={handleDisplayNav}>
-                    <MdMenuOpen size={20} />
-                </Styled.NavLinkWrapper>
-                <Styled.Heading><NavLink to="/">a2rp: an Ashish Ranjan presentation</NavLink></Styled.Heading>
+                <Styled.LogoLinkWrapper>
+                    <Styled.NavLinkWrapper onClick={handleDisplayNav}>
+                        <MdMenuOpen size={20} />
+                    </Styled.NavLinkWrapper>
+                    <NavLink to="/" title="Ashish Ranjan">
+                        <img src={ar_logo} alt="ar_logo" />
+                    </NavLink>
+                </Styled.LogoLinkWrapper>
+                <Styled.Heading><NavLink to="/" title="a2rp: an Ashish Ranjan presentation">a2rp</NavLink></Styled.Heading>
             </Styled.Header>
 
             <Styled.Main>
