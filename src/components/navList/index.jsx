@@ -125,7 +125,7 @@ const NavListCore = () => {
                 <input
                     ref={searchInputRef}
                     type="text"
-                    placeholder="Search topics (Ctrl/⌘+K)…"
+                    placeholder="Search topics (Ctrl + K)"
                     value={search}
                     onChange={handleSearchChange}
                     aria-label="Search topics"
@@ -335,6 +335,33 @@ const NavListCore = () => {
                 <NavLink to="/testing/e2e-playwright" title="E2E — Playwright">E2E — Playwright</NavLink>
                 <NavLink to="/testing/a11y-tests" title="Accessibility (a11y) Tests">a11y Tests</NavLink>
                 <NavLink to="/testing/snapshots" title="Snapshots">Snapshots</NavLink>
+
+                {/* SSR & RSC */}
+                <h3 className="title">SSR &amp; RSC</h3>
+                <NavLink to="/ssr-rsc/ssr-vs-ssg-vs-isr" title="SSR vs SSG vs ISR">SSR vs SSG vs ISR</NavLink>
+                <NavLink to="/ssr-rsc/hydration" title="Hydration">Hydration</NavLink>
+                <NavLink to="/ssr-rsc/streaming" title="Streaming">Streaming</NavLink>
+                <NavLink to="/ssr-rsc/rsc-basics" title="React Server Components (RSC) Basics">RSC Basics</NavLink>
+                <NavLink to="/ssr-rsc/seo-meta" title="SEO & Meta">SEO &amp; Meta</NavLink>
+
+                {/* Build & DX */}
+                <h3 className="title">Build &amp; DX</h3>
+                <NavLink to="/build-dx/vite-config" title="Vite Config">Vite Config</NavLink>
+                <NavLink to="/build-dx/aliases" title="Aliases">Aliases</NavLink>
+                <NavLink to="/build-dx/eslint-prettier" title="ESLint & Prettier">ESLint &amp; Prettier</NavLink>
+                <NavLink to="/build-dx/storybook" title="Storybook">Storybook</NavLink>
+                <NavLink to="/build-dx/bundle-analyze" title="Bundle Analyze">Bundle Analyze</NavLink>
+                <NavLink to="/build-dx/monorepo" title="Monorepo">Monorepo</NavLink>
+
+                {/* Security */}
+                <h3 className="title">Security</h3>
+                <NavLink to="/security/xss" title="XSS (Cross-Site Scripting)">XSS</NavLink>
+                <NavLink to="/security/sanitize-html" title="Sanitize HTML">Sanitize HTML</NavLink>
+                <NavLink to="/security/tokens-storage" title="Tokens Storage">Tokens Storage</NavLink>
+                <NavLink to="/security/cors-cookies" title="CORS & Cookies">CORS & Cookies</NavLink>
+                <NavLink to="/security/auth-basics" title="Auth Basics">Auth Basics</NavLink>
+                <NavLink to="/security/supply-chain" title="Supply Chain Security">Supply Chain</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}

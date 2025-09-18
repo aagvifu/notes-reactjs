@@ -174,6 +174,26 @@ const E2ePlaywright = lazy(() => import("./pages/topics/testing/E2ePlaywright"))
 const A11yTests = lazy(() => import("./pages/topics/testing/A11yTests"));
 const Snapshots = lazy(() => import("./pages/topics/testing/Snapshots"));
 
+const SsrVsSsgVsIsr = lazy(() => import("./pages/topics/ssrRsc/SsrVsSsgVsIsr"));
+const Hydration = lazy(() => import("./pages/topics/ssrRsc/Hydration"));
+const Streaming = lazy(() => import("./pages/topics/ssrRsc/Streaming"));
+const RscBasics = lazy(() => import("./pages/topics/ssrRsc/RscBasics"));
+const SeoMeta = lazy(() => import("./pages/topics/ssrRsc/SeoMeta"));
+
+const ViteConfig = lazy(() => import("./pages/topics/buildDx/ViteConfig"));
+const Aliases = lazy(() => import("./pages/topics/buildDx/Aliases"));
+const EslintPrettier = lazy(() => import("./pages/topics/buildDx/EslintPrettier"));
+const Storybook = lazy(() => import("./pages/topics/buildDx/Storybook"));
+const BundleAnalyze = lazy(() => import("./pages/topics/buildDx/BundleAnalyze"));
+const Monorepo = lazy(() => import("./pages/topics/buildDx/Monorepo"));
+
+const Xss = lazy(() => import("./pages/topics/security/Xss"));
+const SanitizeHtml = lazy(() => import("./pages/topics/security/SanitizeHtml"));
+const TokensStorage = lazy(() => import("./pages/topics/security/TokensStorage"));
+const CorsCookies = lazy(() => import("./pages/topics/security/CorsCookies"));
+const AuthBasics = lazy(() => import("./pages/topics/security/AuthBasics"));
+const SupplyChain = lazy(() => import("./pages/topics/security/SupplyChain"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -415,6 +435,32 @@ const App = () => {
                                     <Route path="/testing/e2e-playwright" element={<E2ePlaywright />} />
                                     <Route path="/testing/a11y-tests" element={<A11yTests />} />
                                     <Route path="/testing/snapshots" element={<Snapshots />} />
+                                </>
+
+                                <>
+                                    <Route path="/ssr-rsc/ssr-vs-ssg-vs-isr" element={<SsrVsSsgVsIsr />} />
+                                    <Route path="/ssr-rsc/hydration" element={<Hydration />} />
+                                    <Route path="/ssr-rsc/streaming" element={<Streaming />} />
+                                    <Route path="/ssr-rsc/rsc-basics" element={<RscBasics />} />
+                                    <Route path="/ssr-rsc/seo-meta" element={<SeoMeta />} />
+                                </>
+
+                                <>
+                                    <Route path="/build-dx/vite-config" element={<ViteConfig />} />
+                                    <Route path="/build-dx/aliases" element={<Aliases />} />
+                                    <Route path="/build-dx/eslint-prettier" element={<EslintPrettier />} />
+                                    <Route path="/build-dx/storybook" element={<Storybook />} />
+                                    <Route path="/build-dx/bundle-analyze" element={<BundleAnalyze />} />
+                                    <Route path="/build-dx/monorepo" element={<Monorepo />} />
+                                </>
+
+                                <>
+                                    <Route path="/security/xss" element={<Xss />} />
+                                    <Route path="/security/sanitize-html" element={<SanitizeHtml />} />
+                                    <Route path="/security/tokens-storage" element={<TokensStorage />} />
+                                    <Route path="/security/cors-cookies" element={<CorsCookies />} />
+                                    <Route path="/security/auth-basics" element={<AuthBasics />} />
+                                    <Route path="/security/supply-chain" element={<SupplyChain />} />
                                 </>
 
                                 {/* 404 */}
