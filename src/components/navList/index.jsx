@@ -155,6 +155,17 @@ const NavListCore = () => {
             <NavLink to="/data/optimistic-updates" title="Optimistic Updates">Optimistic Updates</NavLink>
             <NavLink to="/data/websockets-sse" title="WebSockets & SSE">WebSockets &amp; SSE</NavLink>
 
+            {/* State Management */}
+            <h3 className="title">State Management</h3>
+            <NavLink to="/state-mgmt/context-vs-store" title="Context vs Store">Context vs Store</NavLink>
+            <NavLink to="/state-mgmt/redux-toolkit" title="Redux Toolkit">Redux Toolkit</NavLink>
+            <NavLink to="/state-mgmt/rtk-query" title="RTK Query">RTK Query</NavLink>
+            <NavLink to="/state-mgmt/zustand" title="Zustand">Zustand</NavLink>
+            <NavLink to="/state-mgmt/jotai" title="Jotai">Jotai</NavLink>
+            <NavLink to="/state-mgmt/recoil" title="Recoil">Recoil</NavLink>
+            <NavLink to="/state-mgmt/xstate" title="XState">XState</NavLink>
+            <NavLink to="/state-mgmt/persistence" title="Persistence">Persistence</NavLink>
+
 
         </Styled.Nav>
     );

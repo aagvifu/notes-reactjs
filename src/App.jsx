@@ -116,6 +116,15 @@ const InfiniteScroll = lazy(() => import("./pages/topics/data/InfiniteScroll"));
 const OptimisticUpdates = lazy(() => import("./pages/topics/data/OptimisticUpdates"));
 const WebSocketsSse = lazy(() => import("./pages/topics/data/WebSocketsSse"));
 
+const ContextVsStore = lazy(() => import("./pages/topics/stateMgmt/ContextVsStore"));
+const ReduxToolkit = lazy(() => import("./pages/topics/stateMgmt/ReduxToolkit"));
+const RtkQuery = lazy(() => import("./pages/topics/stateMgmt/RtkQuery"));
+const Zustand = lazy(() => import("./pages/topics/stateMgmt/Zustand"));
+const Jotai = lazy(() => import("./pages/topics/stateMgmt/Jotai"));
+const Recoil = lazy(() => import("./pages/topics/stateMgmt/Recoil"));
+const XState = lazy(() => import("./pages/topics/stateMgmt/XState"));
+const Persistence = lazy(() => import("./pages/topics/stateMgmt/Persistence"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -269,6 +278,17 @@ const App = () => {
                                     <Route path="/data/infinite-scroll" element={<InfiniteScroll />} />
                                     <Route path="/data/optimistic-updates" element={<OptimisticUpdates />} />
                                     <Route path="/data/websockets-sse" element={<WebSocketsSse />} />
+                                </>
+
+                                <>
+                                    <Route path="/state-mgmt/context-vs-store" element={<ContextVsStore />} />
+                                    <Route path="/state-mgmt/redux-toolkit" element={<ReduxToolkit />} />
+                                    <Route path="/state-mgmt/rtk-query" element={<RtkQuery />} />
+                                    <Route path="/state-mgmt/zustand" element={<Zustand />} />
+                                    <Route path="/state-mgmt/jotai" element={<Jotai />} />
+                                    <Route path="/state-mgmt/recoil" element={<Recoil />} />
+                                    <Route path="/state-mgmt/xstate" element={<XState />} />
+                                    <Route path="/state-mgmt/persistence" element={<Persistence />} />
                                 </>
 
                                 {/* 404 */}
