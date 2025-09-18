@@ -163,6 +163,18 @@ const TypingContext = lazy(() => import("./pages/topics/typescript/TypingContext
 const TypingReducers = lazy(() => import("./pages/topics/typescript/TypingReducers"));
 const Generics = lazy(() => import("./pages/topics/typescript/Generics"));
 
+const RtlBasics = lazy(() => import("./pages/topics/testing/RtlBasics"));
+const JestBasics = lazy(() => import("./pages/topics/testing/JestBasics"));
+const AsyncTests = lazy(() => import("./pages/topics/testing/AsyncTests"));
+const HooksTests = lazy(() => import("./pages/topics/testing/HooksTests"));
+const RouterTests = lazy(() => import("./pages/topics/testing/RouterTests"));
+const Msw = lazy(() => import("./pages/topics/testing/Msw"));
+const E2eCypress = lazy(() => import("./pages/topics/testing/E2eCypress"));
+const E2ePlaywright = lazy(() => import("./pages/topics/testing/E2ePlaywright"));
+const A11yTests = lazy(() => import("./pages/topics/testing/A11yTests"));
+const Snapshots = lazy(() => import("./pages/topics/testing/Snapshots"));
+
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -199,7 +211,8 @@ const App = () => {
                         <Suspense
                             fallback={<Box
                                 sx={{
-                                    width: 300, heightL: 300,
+                                    // border: "1px solid #f00",
+                                    width: "100vw", height: "100vh",
                                     display: "flex", alignItems: "center", justifyContent: "center"
                                 }}
                             ><CircularProgress /></Box>}>
@@ -389,6 +402,19 @@ const App = () => {
                                     <Route path="/typescript/typing-context" element={<TypingContext />} />
                                     <Route path="/typescript/typing-reducers" element={<TypingReducers />} />
                                     <Route path="/typescript/generics" element={<Generics />} />
+                                </>
+
+                                <>
+                                    <Route path="/testing/rtl-basics" element={<RtlBasics />} />
+                                    <Route path="/testing/jest-basics" element={<JestBasics />} />
+                                    <Route path="/testing/async-tests" element={<AsyncTests />} />
+                                    <Route path="/testing/hooks-tests" element={<HooksTests />} />
+                                    <Route path="/testing/router-tests" element={<RouterTests />} />
+                                    <Route path="/testing/msw" element={<Msw />} />
+                                    <Route path="/testing/e2e-cypress" element={<E2eCypress />} />
+                                    <Route path="/testing/e2e-playwright" element={<E2ePlaywright />} />
+                                    <Route path="/testing/a11y-tests" element={<A11yTests />} />
+                                    <Route path="/testing/snapshots" element={<Snapshots />} />
                                 </>
 
                                 {/* 404 */}

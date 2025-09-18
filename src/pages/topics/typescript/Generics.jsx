@@ -31,7 +31,7 @@ const Generics = () => {
                     </li>
                     <li>
                         <b>Constraint:</b> using <Styled.InlineCode>T extends X</Styled.InlineCode> to restrict
-                        what types are allowed (e.g., “<i>T must be an object with a name</i>”).
+                        what types are allowed (e.g., "<i>T must be an object with a name</i>").
                     </li>
                     <li>
                         <b>Default type parameter:</b> give a fallback like{" "}
@@ -64,7 +64,7 @@ const b = identity("hello");     // b: string
 const c = identity({ id: 1 });   // c: { id: number }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    The type parameter <Styled.InlineCode>T</Styled.InlineCode> “captures” the input type and
+                    The type parameter <Styled.InlineCode>T</Styled.InlineCode> "captures" the input type and
                     carries it to the output—so TypeScript preserves exact types.
                 </Styled.Small>
             </Styled.Section>
@@ -241,8 +241,8 @@ function useAsync<T>(fn: () => Promise<T>, deps: React.DependencyList = []): Asy
                 <Styled.H2>When to Use Generics (vs. Unions or Overloads)</Styled.H2>
                 <Styled.List>
                     <li>
-                        Choose <b>generics</b> when input and output types are <i>linked</i> (e.g., “return the
-                        same type as input”).
+                        Choose <b>generics</b> when input and output types are <i>linked</i> (e.g., "return the
+                        same type as input").
                     </li>
                     <li>
                         Choose <b>unions</b> when you accept several fixed alternatives (e.g.,{" "}
