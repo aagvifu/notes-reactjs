@@ -166,6 +166,16 @@ const NavListCore = () => {
             <NavLink to="/state-mgmt/xstate" title="XState">XState</NavLink>
             <NavLink to="/state-mgmt/persistence" title="Persistence">Persistence</NavLink>
 
+            {/* Performance */}
+            <h3 className="title">Performance</h3>
+            <NavLink to="/perf/rerender-triggers" title="Re-render Triggers">Re-render Triggers</NavLink>
+            <NavLink to="/perf/keys-strategy" title="Keys Strategy">Keys Strategy</NavLink>
+            <NavLink to="/perf/memoization" title="Memoization">Memoization</NavLink>
+            <NavLink to="/perf/defer-work" title="Defer Work">Defer Work</NavLink>
+            <NavLink to="/perf/web-workers" title="Web Workers">Web Workers</NavLink>
+            <NavLink to="/perf/virtualization" title="List Virtualization">Virtualization</NavLink>
+            <NavLink to="/perf/image-optim" title="Image Optimization">Image Optimization</NavLink>
+            <NavLink to="/perf/profiler" title="React Profiler">Profiler</NavLink>
 
         </Styled.Nav>
     );

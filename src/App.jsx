@@ -125,6 +125,15 @@ const Recoil = lazy(() => import("./pages/topics/stateMgmt/Recoil"));
 const XState = lazy(() => import("./pages/topics/stateMgmt/XState"));
 const Persistence = lazy(() => import("./pages/topics/stateMgmt/Persistence"));
 
+const RerenderTriggers = lazy(() => import("./pages/topics/perf/RerenderTriggers"));
+const KeysStrategy = lazy(() => import("./pages/topics/perf/KeysStrategy"));
+const Memoization = lazy(() => import("./pages/topics/perf/Memoization"));
+const DeferWork = lazy(() => import("./pages/topics/perf/DeferWork"));
+const WebWorkers = lazy(() => import("./pages/topics/perf/WebWorkers"));
+const Virtualization = lazy(() => import("./pages/topics/perf/Virtualization"));
+const ImageOptim = lazy(() => import("./pages/topics/perf/ImageOptim"));
+const Profiler = lazy(() => import("./pages/topics/perf/Profiler"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -289,6 +298,17 @@ const App = () => {
                                     <Route path="/state-mgmt/recoil" element={<Recoil />} />
                                     <Route path="/state-mgmt/xstate" element={<XState />} />
                                     <Route path="/state-mgmt/persistence" element={<Persistence />} />
+                                </>
+
+                                <>
+                                    <Route path="/perf/rerender-triggers" element={<RerenderTriggers />} />
+                                    <Route path="/perf/keys-strategy" element={<KeysStrategy />} />
+                                    <Route path="/perf/memoization" element={<Memoization />} />
+                                    <Route path="/perf/defer-work" element={<DeferWork />} />
+                                    <Route path="/perf/web-workers" element={<WebWorkers />} />
+                                    <Route path="/perf/virtualization" element={<Virtualization />} />
+                                    <Route path="/perf/image-optim" element={<ImageOptim />} />
+                                    <Route path="/perf/profiler" element={<Profiler />} />
                                 </>
 
                                 {/* 404 */}
