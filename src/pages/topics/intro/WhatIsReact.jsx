@@ -1,13 +1,5 @@
-// src/pages/intro/WhatIsReact.jsx
-import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Keep this page beginner-first:
- * - Plain language
- * - Short sections
- * - Tiny runnable-style snippets (but shown as text)
- */
 const WhatIsReact = () => {
     return (
         <Styled.Page>

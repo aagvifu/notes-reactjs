@@ -1,10 +1,6 @@
 import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Function Components — thorough, beginner-friendly notes
- * Terminology in this file is defined explicitly in the first section.
- */
 const FnComponents = () => {
     return (
         <Styled.Page>

@@ -1,18 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Styled } from "./styled";
 
-/**
- * Toast (snackbar) component
- *
- * Props:
- * - open: boolean
- * - message: string
- * - type?: "info" | "success" | "error" (default "info")
- * - actionLabel?: string
- * - onAction?: () => void
- * - onClose?: () => void
- * - duration?: number (ms) — set 0 for persistent (default 4000)
- */
 export default function Toast({
     open,
     message,

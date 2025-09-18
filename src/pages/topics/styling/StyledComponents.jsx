@@ -1,5 +1,3 @@
-// src/pages/topics/styling/StyledComponents.jsx
-import React from "react";
 import { Styled } from "./styled";
 
 const StyledComponents = () => {

@@ -1,11 +1,5 @@
-import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Focus Management
- * - Make keyboard navigation predictable and accessible.
- * - Ensure logical tab order, visible focus, and programmatic focus moves at the right moments.
- */
 const FocusManagement = () => {
     return (
         <Styled.Page>

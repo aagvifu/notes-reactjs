@@ -1,12 +1,5 @@
-// src/pages/topics/forms/FileUpload.jsx
-import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Forms & Validation → File Upload
- * Learn the anatomy of <input type="file">, controlled vs uncontrolled behavior,
- * validation (type/size), previews, drag-and-drop, progress, cancelation, a11y, and pitfalls.
- */
 const FileUpload = () => {
     return (
         <Styled.Page>

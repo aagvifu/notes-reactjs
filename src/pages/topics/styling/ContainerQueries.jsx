@@ -1,5 +1,3 @@
-// src/pages/topics/styling/ContainerQueries.jsx
-import React from "react";
 import { Styled } from "./styled";
 
 const ContainerQueries = () => {

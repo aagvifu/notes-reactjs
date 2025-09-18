@@ -123,6 +123,39 @@ const NavListCore = () => {
             <NavLink to="/styling/icons" title="Icons">Icons</NavLink>
 
 
+            {/* Routing */}
+            <h3 className="title">Routing</h3>
+            <NavLink to="/routing/router-basics" title="Router Basics">Router Basics</NavLink>
+            <NavLink to="/routing/nested-routes" title="Nested Routes">Nested Routes</NavLink>
+            <NavLink to="/routing/layout-routes" title="Layout Routes">Layout Routes</NavLink>
+            <NavLink to="/routing/route-params" title="Route Params">Route Params</NavLink>
+            <NavLink to="/routing/search-params" title="Search Params">Search Params</NavLink>
+            <NavLink to="/routing/lazy-routes" title="Lazy Routes">Lazy Routes</NavLink>
+            <NavLink to="/routing/protected-routes" title="Protected Routes">Protected Routes</NavLink>
+            <NavLink to="/routing/scroll-restore" title="Scroll Restore">Scroll Restore</NavLink>
+            <NavLink to="/routing/not-found-redirect" title="Not Found & Redirect">Not Found &amp; Redirect</NavLink>
+
+            {/* Suspense & Code Split */}
+            <h3 className="title">Suspense &amp; Code Split</h3>
+            <NavLink to="/suspense-split/react-lazy" title="React.lazy">React.lazy</NavLink>
+            <NavLink to="/suspense-split/suspense-boundary" title="Suspense Boundary">&lt;Suspense&gt; Boundary</NavLink>
+            <NavLink to="/suspense-split/route-splitting" title="Route Splitting">Route Splitting</NavLink>
+            <NavLink to="/suspense-split/preloading" title="Preloading">Preloading</NavLink>
+
+            {/* Data Fetching & Caching */}
+            <h3 className="title">Data Fetching &amp; Caching</h3>
+            <NavLink to="/data/fetch-basics" title="Fetch Basics">Fetch Basics</NavLink>
+            <NavLink to="/data/abort-controller" title="AbortController">AbortController</NavLink>
+            <NavLink to="/data/loading-error-states" title="Loading & Error States">Loading &amp; Error States</NavLink>
+            <NavLink to="/data/swr-basics" title="SWR Basics">SWR Basics</NavLink>
+            <NavLink to="/data/tanstack-query" title="TanStack Query">TanStack Query</NavLink>
+            <NavLink to="/data/cache-keys" title="Cache Keys">Cache Keys</NavLink>
+            <NavLink to="/data/invalidation" title="Invalidation">Invalidation</NavLink>
+            <NavLink to="/data/infinite-scroll" title="Infinite Scroll">Infinite Scroll</NavLink>
+            <NavLink to="/data/optimistic-updates" title="Optimistic Updates">Optimistic Updates</NavLink>
+            <NavLink to="/data/websockets-sse" title="WebSockets & SSE">WebSockets &amp; SSE</NavLink>
+
+
         </Styled.Nav>
     );
 };

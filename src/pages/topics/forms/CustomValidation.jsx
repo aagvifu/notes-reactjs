@@ -1,5 +1,3 @@
-// src/pages/topics/forms/CustomValidation.jsx
-import React from "react";
 import { Styled } from "./styled";
 
 const CustomValidation = () => {

@@ -90,6 +90,32 @@ const Responsive = lazy(() => import("./pages/topics/styling/Responsive"));
 const ContainerQueries = lazy(() => import("./pages/topics/styling/ContainerQueries"));
 const Icons = lazy(() => import("./pages/topics/styling/Icons"));
 
+const RouterBasics = lazy(() => import("./pages/topics/routing/RouterBasics"));
+const NestedRoutes = lazy(() => import("./pages/topics/routing/NestedRoutes"));
+const LayoutRoutes = lazy(() => import("./pages/topics/routing/LayoutRoutes"));
+const RouteParams = lazy(() => import("./pages/topics/routing/RouteParams"));
+const SearchParams = lazy(() => import("./pages/topics/routing/SearchParams"));
+const LazyRoutes = lazy(() => import("./pages/topics/routing/LazyRoutes"));
+const ProtectedRoutes = lazy(() => import("./pages/topics/routing/ProtectedRoutes"));
+const ScrollRestore = lazy(() => import("./pages/topics/routing/ScrollRestore"));
+const NotFoundRedirect = lazy(() => import("./pages/topics/routing/NotFoundRedirect"));
+
+const ReactLazy = lazy(() => import("./pages/topics/suspenseSplit/ReactLazy"));
+const SuspenseBoundary = lazy(() => import("./pages/topics/suspenseSplit/SuspenseBoundary"));
+const RouteSplitting = lazy(() => import("./pages/topics/suspenseSplit/RouteSplitting"));
+const Preloading = lazy(() => import("./pages/topics/suspenseSplit/Preloading"));
+
+const FetchBasics = lazy(() => import("./pages/topics/data/FetchBasics"));
+const AbortControllerPage = lazy(() => import("./pages/topics/data/AbortController"));
+const LoadingErrorStates = lazy(() => import("./pages/topics/data/LoadingErrorStates"));
+const SwrBasics = lazy(() => import("./pages/topics/data/SwrBasics"));
+const TanstackQuery = lazy(() => import("./pages/topics/data/TanstackQuery"));
+const CacheKeys = lazy(() => import("./pages/topics/data/CacheKeys"));
+const Invalidation = lazy(() => import("./pages/topics/data/Invalidation"));
+const InfiniteScroll = lazy(() => import("./pages/topics/data/InfiniteScroll"));
+const OptimisticUpdates = lazy(() => import("./pages/topics/data/OptimisticUpdates"));
+const WebSocketsSse = lazy(() => import("./pages/topics/data/WebSocketsSse"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -211,6 +237,38 @@ const App = () => {
                                     <Route path="/styling/responsive" element={<Responsive />} />
                                     <Route path="/styling/container-queries" element={<ContainerQueries />} />
                                     <Route path="/styling/icons" element={<Icons />} />
+                                </>
+
+                                <>
+                                    <Route path="/routing/router-basics" element={<RouterBasics />} />
+                                    <Route path="/routing/nested-routes" element={<NestedRoutes />} />
+                                    <Route path="/routing/layout-routes" element={<LayoutRoutes />} />
+                                    <Route path="/routing/route-params" element={<RouteParams />} />
+                                    <Route path="/routing/search-params" element={<SearchParams />} />
+                                    <Route path="/routing/lazy-routes" element={<LazyRoutes />} />
+                                    <Route path="/routing/protected-routes" element={<ProtectedRoutes />} />
+                                    <Route path="/routing/scroll-restore" element={<ScrollRestore />} />
+                                    <Route path="/routing/not-found-redirect" element={<NotFoundRedirect />} />
+                                </>
+
+                                <>
+                                    <Route path="/suspense-split/react-lazy" element={<ReactLazy />} />
+                                    <Route path="/suspense-split/suspense-boundary" element={<SuspenseBoundary />} />
+                                    <Route path="/suspense-split/route-splitting" element={<RouteSplitting />} />
+                                    <Route path="/suspense-split/preloading" element={<Preloading />} />
+                                </>
+
+                                <>
+                                    <Route path="/data/fetch-basics" element={<FetchBasics />} />
+                                    <Route path="/data/abort-controller" element={<AbortControllerPage />} />
+                                    <Route path="/data/loading-error-states" element={<LoadingErrorStates />} />
+                                    <Route path="/data/swr-basics" element={<SwrBasics />} />
+                                    <Route path="/data/tanstack-query" element={<TanstackQuery />} />
+                                    <Route path="/data/cache-keys" element={<CacheKeys />} />
+                                    <Route path="/data/invalidation" element={<Invalidation />} />
+                                    <Route path="/data/infinite-scroll" element={<InfiniteScroll />} />
+                                    <Route path="/data/optimistic-updates" element={<OptimisticUpdates />} />
+                                    <Route path="/data/websockets-sse" element={<WebSocketsSse />} />
                                 </>
 
                                 {/* 404 */}

@@ -1,5 +1,3 @@
-// src/pages/topics/domEvents/EventBubbling.jsx
-import React from "react";
 import { Styled } from "./styled";
 
 const EventBubbling = () => {

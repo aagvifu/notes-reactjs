@@ -1,12 +1,5 @@
-import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Debounced Inputs
- * - Teaches what debouncing is, how and when to use it with forms,
- * - Controlled vs Uncontrolled patterns,
- * - Canceling async work, IME/composition caveats, and Do/Don'ts.
- */
 const DebouncedInputs = () => {
     return (
         <Styled.Page>

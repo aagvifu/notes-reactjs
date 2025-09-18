@@ -1,4 +1,3 @@
-// src/components/Modal/styled.js
 import styled from "styled-components";
 
 export const Styled = {
