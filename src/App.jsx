@@ -3,7 +3,7 @@ import { Styled } from './App.styled'
 import { Navigate, NavLink, Route, Routes } from 'react-router-dom'
 import { lazy, Suspense, useState } from 'react'
 import { MdMenuOpen } from 'react-icons/md'
-import { CircularProgress } from '@mui/material'
+import { Box, CircularProgress } from '@mui/material'
 import Footer from './components/footer'
 import NavList from './components/navList'
 
@@ -134,6 +134,18 @@ const Virtualization = lazy(() => import("./pages/topics/perf/Virtualization"));
 const ImageOptim = lazy(() => import("./pages/topics/perf/ImageOptim"));
 const Profiler = lazy(() => import("./pages/topics/perf/Profiler"));
 
+const ErrorBoundaries = lazy(() => import("./pages/topics/errors/ErrorBoundaries"));
+const DataErrors = lazy(() => import("./pages/topics/errors/DataErrors"));
+const FallbackUI = lazy(() => import("./pages/topics/errors/FallbackUI"));
+const Retries = lazy(() => import("./pages/topics/errors/Retries"));
+const LoggingMonitoring = lazy(() => import("./pages/topics/errors/LoggingMonitoring"));
+
+const I18nBasics = lazy(() => import("./pages/topics/i18n/I18nBasics"));
+const ReactI18next = lazy(() => import("./pages/topics/i18n/ReactI18next"));
+const FormatJS = lazy(() => import("./pages/topics/i18n/FormatJS"));
+const PluralsDatesNumbers = lazy(() => import("./pages/topics/i18n/PluralsDatesNumbers"));
+const RtlSupport = lazy(() => import("./pages/topics/i18n/RtlSupport"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -157,7 +169,13 @@ const App = () => {
 
                 <Styled.ContentWrapper id="scroll-root" data-scroll-root>
                     <Styled.RoutesWrapper>
-                        <Suspense fallback={<CircularProgress />}>
+                        <Suspense
+                            fallback={<Box
+                                sx={{
+                                    width: 300, heightL: 300,
+                                    display: "flex", alignItems: "center", justifyContent: "center"
+                                }}
+                            ><CircularProgress /></Box>}>
                             <Routes>
                                 {/* Basics */}
                                 <Route path="/" element={<Navigate to="/home" />} />
@@ -309,6 +327,22 @@ const App = () => {
                                     <Route path="/perf/virtualization" element={<Virtualization />} />
                                     <Route path="/perf/image-optim" element={<ImageOptim />} />
                                     <Route path="/perf/profiler" element={<Profiler />} />
+                                </>
+
+                                <>
+                                    <Route path="/errors/error-boundaries" element={<ErrorBoundaries />} />
+                                    <Route path="/errors/data-errors" element={<DataErrors />} />
+                                    <Route path="/errors/fallback-ui" element={<FallbackUI />} />
+                                    <Route path="/errors/retries" element={<Retries />} />
+                                    <Route path="/errors/logging-monitoring" element={<LoggingMonitoring />} />
+                                </>
+
+                                <>
+                                    <Route path="/i18n/i18n-basics" element={<I18nBasics />} />
+                                    <Route path="/i18n/react-i18next" element={<ReactI18next />} />
+                                    <Route path="/i18n/formatjs" element={<FormatJS />} />
+                                    <Route path="/i18n/plurals-dates-numbers" element={<PluralsDatesNumbers />} />
+                                    <Route path="/i18n/rtl-support" element={<RtlSupport />} />
                                 </>
 
                                 {/* 404 */}

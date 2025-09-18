@@ -177,6 +177,23 @@ const NavListCore = () => {
             <NavLink to="/perf/image-optim" title="Image Optimization">Image Optimization</NavLink>
             <NavLink to="/perf/profiler" title="React Profiler">Profiler</NavLink>
 
+            {/* Errors */}
+            <h3 className="title">Errors</h3>
+            <NavLink to="/errors/error-boundaries" title="Error Boundaries">Error Boundaries</NavLink>
+            <NavLink to="/errors/data-errors" title="Data Errors">Data Errors</NavLink>
+            <NavLink to="/errors/fallback-ui" title="Fallback UI">Fallback UI</NavLink>
+            <NavLink to="/errors/retries" title="Retries & Backoff">Retries</NavLink>
+            <NavLink to="/errors/logging-monitoring" title="Logging & Monitoring">Logging & Monitoring</NavLink>
+
+            {/* Internationalization (i18n) */}
+            <h3 className="title">Internationalization (i18n)</h3>
+            <NavLink to="/i18n/i18n-basics" title="i18n Basics">i18n Basics</NavLink>
+            <NavLink to="/i18n/react-i18next" title="react-i18next">react-i18next</NavLink>
+            <NavLink to="/i18n/formatjs" title="FormatJS">FormatJS</NavLink>
+            <NavLink to="/i18n/plurals-dates-numbers" title="Plurals, Dates & Numbers">Plurals, Dates &amp; Numbers</NavLink>
+            <NavLink to="/i18n/rtl-support" title="RTL Support">RTL Support</NavLink>
+
+
         </Styled.Nav>
     );
 };
