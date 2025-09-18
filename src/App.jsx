@@ -154,6 +154,14 @@ const FramerMotion = lazy(() => import("./pages/topics/animations/FramerMotion")
 const ScrollEffects = lazy(() => import("./pages/topics/animations/ScrollEffects"));
 const AnimationPerformance = lazy(() => import("./pages/topics/animations/AnimationPerformance"));
 
+const TsxBasics = lazy(() => import("./pages/topics/typescript/TsxBasics"));
+const TypingProps = lazy(() => import("./pages/topics/typescript/TypingProps"));
+const TypingChildren = lazy(() => import("./pages/topics/typescript/TypingChildren"));
+const TypingRefs = lazy(() => import("./pages/topics/typescript/TypingRefs"));
+const TypingHooks = lazy(() => import("./pages/topics/typescript/TypingHooks"));
+const TypingContext = lazy(() => import("./pages/topics/typescript/TypingContext"));
+const TypingReducers = lazy(() => import("./pages/topics/typescript/TypingReducers"));
+const Generics = lazy(() => import("./pages/topics/typescript/Generics"));
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -370,6 +378,17 @@ const App = () => {
                                     <Route path="/animations/framer-motion" element={<FramerMotion />} />
                                     <Route path="/animations/scroll-effects" element={<ScrollEffects />} />
                                     <Route path="/animations/anim-perf" element={<AnimationPerformance />} />
+                                </>
+
+                                <>
+                                    <Route path="/typescript/tsx-basics" element={<TsxBasics />} />
+                                    <Route path="/typescript/typing-props" element={<TypingProps />} />
+                                    <Route path="/typescript/typing-children" element={<TypingChildren />} />
+                                    <Route path="/typescript/typing-refs" element={<TypingRefs />} />
+                                    <Route path="/typescript/typing-hooks" element={<TypingHooks />} />
+                                    <Route path="/typescript/typing-context" element={<TypingContext />} />
+                                    <Route path="/typescript/typing-reducers" element={<TypingReducers />} />
+                                    <Route path="/typescript/generics" element={<Generics />} />
                                 </>
 
                                 {/* 404 */}

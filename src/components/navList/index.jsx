@@ -201,6 +201,18 @@ const NavListCore = () => {
             <NavLink to="/animations/scroll-effects" title="Scroll-based Effects">Scroll Effects</NavLink>
             <NavLink to="/animations/anim-perf" title="Animation Performance">Animation Performance</NavLink>
 
+            {/* TypeScript */}
+            <h3 className="title">TypeScript</h3>
+            <NavLink to="/typescript/tsx-basics" title="TSX Basics">TSX Basics</NavLink>
+            <NavLink to="/typescript/typing-props" title="Typing Props">Typing Props</NavLink>
+            <NavLink to="/typescript/typing-children" title="Typing Children">Typing Children</NavLink>
+            <NavLink to="/typescript/typing-refs" title="Typing Refs">Typing Refs</NavLink>
+            <NavLink to="/typescript/typing-hooks" title="Typing Hooks">Typing Hooks</NavLink>
+            <NavLink to="/typescript/typing-context" title="Typing Context">Typing Context</NavLink>
+            <NavLink to="/typescript/typing-reducers" title="Typing Reducers">Typing Reducers</NavLink>
+            <NavLink to="/typescript/generics" title="Generics">Generics</NavLink>
+
+
         </Styled.Nav>
     );
 };
