@@ -77,18 +77,19 @@ const LogoLinkWrapper = styled.div`
     gap: 30px;
 
     a {
-        border: 1px solid #333;
-        border-radius: 6px;
+        /* border: 1px solid #333; */
+        /* border-radius: 6px; */
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        height: 40px;
-        width: 50px;
+        padding: 0 15px;
 
-        img {
-            /* width: 100px; */
-            height: 22px;
+        color: #aaa;
+        text-decoration: none;
+        padding: 2px;
+        &:hover {
+            border-bottom: 1px solid #aaa;
         }
     }
 `;
@@ -107,11 +108,9 @@ const NavLinkWrapper = styled.div`
 const Heading = styled.h1`
     font-size: 14px;
     a {
-        color: #aaa;
-        text-decoration: none;
-        padding: 2px;
-        &:hover {
-            border-bottom: 1px solid #aaa;
+        img {
+            /* width: 100px; */
+            height: 22px;
         }
     }
 `;

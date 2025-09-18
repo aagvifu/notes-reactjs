@@ -166,11 +166,17 @@ const App = () => {
                     <Styled.NavLinkWrapper onClick={handleDisplayNav}>
                         <MdMenuOpen size={20} />
                     </Styled.NavLinkWrapper>
-                    <NavLink to="/" title="Ashish Ranjan">
-                        <img src={ar_logo} alt="ar_logo" />
-                    </NavLink>
+                    <NavLink to="/" title="ReactJS Notes">ReactJS Notes</NavLink>
                 </Styled.LogoLinkWrapper>
-                <Styled.Heading><NavLink to="/" title="ReactJS Notes">ReactJS Notes</NavLink></Styled.Heading>
+                <Styled.Heading>
+                    <a
+                        href="https://www.ashishranjan.net"
+                        target="_blank"
+                        title="Ashish Ranjan"
+                    >
+                        <img src={ar_logo} alt="ar_logo" />
+                    </a>
+                </Styled.Heading>
             </Styled.Header>
 
             <Styled.Main>
