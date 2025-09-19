@@ -90,7 +90,7 @@ const Home = () => {
                                     href="https://www.facebook.com/theash.ashish/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                >https://www.facebook.com/theash.ashish/</a>
+                                >facebook.com/theash.ashish/</a>
                                 <div className="icon"><FaFacebook size={20} /></div>
                             </Col2>
                         </Row>
@@ -101,7 +101,7 @@ const Home = () => {
                                     href="https://www.linkedin.com/in/aashishranjan/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                >https://www.linkedin.com/in/aashishranjan/</a>
+                                >linkedin.com/in/aashishranjan/</a>
                                 <div className="icon"><FaLinkedin size={20} /></div>
                             </Col2>
                         </Row>
@@ -112,7 +112,7 @@ const Home = () => {
                                     href="https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                >https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ</a>
+                                >youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ</a>
                                 <div className="icon"><FaYoutube size={20} /></div>
                             </Col2>
                         </Row>
@@ -123,7 +123,7 @@ const Home = () => {
                                     href="https://github.com/a2rp"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                >https://github.com/a2rp</a>
+                                >github.com/a2rp</a>
                                 <div className="icon"><FaGithub size={20} /></div>
                             </Col2>
                         </Row>

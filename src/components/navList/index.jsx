@@ -389,6 +389,22 @@ const NavListCore = () => {
                 <NavLink to="/architecture/feature-folders" title="Feature Folders">Feature Folders</NavLink>
                 <NavLink to="/architecture/api-design" title="API Design">API Design</NavLink>
 
+                {/* Reusable Components */}
+                <h3 className="title">Reusable Components</h3>
+                <NavLink to="/components-lib/modal" title="Modal">Modal</NavLink>
+                <NavLink to="/components-lib/drawer" title="Drawer">Drawer</NavLink>
+                <NavLink to="/components-lib/tooltip" title="Tooltip">Tooltip</NavLink>
+                <NavLink to="/components-lib/popover" title="Popover">Popover</NavLink>
+                <NavLink to="/components-lib/menu" title="Menu">Menu</NavLink>
+                <NavLink to="/components-lib/dropdown" title="Dropdown">Dropdown</NavLink>
+                <NavLink to="/components-lib/combobox" title="Combobox">Combobox</NavLink>
+                <NavLink to="/components-lib/tabs" title="Tabs">Tabs</NavLink>
+                <NavLink to="/components-lib/accordion" title="Accordion">Accordion</NavLink>
+                <NavLink to="/components-lib/table" title="Table">Table</NavLink>
+                <NavLink to="/components-lib/list" title="List">List</NavLink>
+                <NavLink to="/components-lib/toast" title="Toast">Toast</NavLink>
+                <NavLink to="/components-lib/pagination" title="Pagination">Pagination</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}

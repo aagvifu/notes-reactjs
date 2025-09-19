@@ -215,6 +215,19 @@ const Slots = lazy(() => import("./pages/topics/architecture/Slots"));
 const FeatureFolders = lazy(() => import("./pages/topics/architecture/FeatureFolders"));
 const ApiDesign = lazy(() => import("./pages/topics/architecture/ApiDesign"));
 
+const Modal = lazy(() => import("./pages/topics/componentsLib/Modal"));
+const Drawer = lazy(() => import("./pages/topics/componentsLib/Drawer"));
+const Tooltip = lazy(() => import("./pages/topics/componentsLib/Tooltip"));
+const Popover = lazy(() => import("./pages/topics/componentsLib/Popover"));
+const Menu = lazy(() => import("./pages/topics/componentsLib/Menu"));
+const Dropdown = lazy(() => import("./pages/topics/componentsLib/Dropdown"));
+const Combobox = lazy(() => import("./pages/topics/componentsLib/Combobox"));
+const Tabs = lazy(() => import("./pages/topics/componentsLib/Tabs"));
+const Accordion = lazy(() => import("./pages/topics/componentsLib/Accordion"));
+const Table = lazy(() => import("./pages/topics/componentsLib/Table"));
+const List = lazy(() => import("./pages/topics/componentsLib/List"));
+const Toast = lazy(() => import("./pages/topics/componentsLib/Toast"));
+const Pagination = lazy(() => import("./pages/topics/componentsLib/Pagination"));
 
 
 const App = () => {
@@ -510,6 +523,22 @@ const App = () => {
                                     <Route path="/architecture/slots" element={<Slots />} />
                                     <Route path="/architecture/feature-folders" element={<FeatureFolders />} />
                                     <Route path="/architecture/api-design" element={<ApiDesign />} />
+                                </>
+
+                                <>
+                                    <Route path="/components-lib/modal" element={<Modal />} />
+                                    <Route path="/components-lib/drawer" element={<Drawer />} />
+                                    <Route path="/components-lib/tooltip" element={<Tooltip />} />
+                                    <Route path="/components-lib/popover" element={<Popover />} />
+                                    <Route path="/components-lib/menu" element={<Menu />} />
+                                    <Route path="/components-lib/dropdown" element={<Dropdown />} />
+                                    <Route path="/components-lib/combobox" element={<Combobox />} />
+                                    <Route path="/components-lib/tabs" element={<Tabs />} />
+                                    <Route path="/components-lib/accordion" element={<Accordion />} />
+                                    <Route path="/components-lib/table" element={<Table />} />
+                                    <Route path="/components-lib/list" element={<List />} />
+                                    <Route path="/components-lib/toast" element={<Toast />} />
+                                    <Route path="/components-lib/pagination" element={<Pagination />} />
                                 </>
 
                                 {/* 404 */}
