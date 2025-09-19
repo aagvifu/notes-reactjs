@@ -1,12 +1,5 @@
-// src/pages/topics/modern/Deprecations.jsx
-import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Modern React — Deprecations
- * A beginner-friendly guide to React APIs you should avoid today,
- * what they mean, why they’re problematic, and how to migrate.
- */
 const Deprecations = () => {
     return (
         <Styled.Page>
@@ -20,7 +13,7 @@ const Deprecations = () => {
 
             {/* 0) What does "deprecated" mean? */}
             <Styled.Section>
-                <Styled.H2>What does “deprecated” mean?</Styled.H2>
+                <Styled.H2>What does "deprecated" mean?</Styled.H2>
                 <Styled.List>
                     <li>
                         <b>Deprecated:</b> The API still exists for now, but you should avoid using it. It may be removed in a future major version.
@@ -41,7 +34,7 @@ const Deprecations = () => {
                     The following lifecycle methods are considered <b>legacy</b> and unsafe for async rendering:
                     <Styled.InlineCode>componentWillMount</Styled.InlineCode>,{" "}
                     <Styled.InlineCode>componentWillReceiveProps</Styled.InlineCode>,{" "}
-                    <Styled.InlineCode>componentWillUpdate</Styled.InlineCode>. You may see “UNSAFE_” prefixed versions in older code.
+                    <Styled.InlineCode>componentWillUpdate</Styled.InlineCode>. You may see "UNSAFE_" prefixed versions in older code.
                 </Styled.P>
                 <Styled.List>
                     <li>
@@ -133,7 +126,7 @@ const Deprecations = () => {
             <Styled.Section>
                 <Styled.H2><code>findDOMNode</code> (deprecated)</Styled.H2>
                 <Styled.P>
-                    <Styled.InlineCode>ReactDOM.findDOMNode(component)</Styled.InlineCode> is deprecated because it breaks encapsulation and doesn’t work with some future renderers.
+                    <Styled.InlineCode>ReactDOM.findDOMNode(component)</Styled.InlineCode> is deprecated because it breaks encapsulation and doesn't work with some future renderers.
                     Instead, attach a <b>ref directly</b> to the DOM node.
                 </Styled.P>
 
@@ -163,7 +156,7 @@ const Deprecations = () => {
                 <Styled.H2>Legacy Context API (contextTypes) </Styled.H2>
                 <Styled.P>
                     The pre-16.3 context used <Styled.InlineCode>childContextTypes</Styled.InlineCode> /
-                    <Styled.InlineCode>contextTypes</Styled.InlineCode>. It’s considered legacy. Use{" "}
+                    <Styled.InlineCode>contextTypes</Styled.InlineCode>. It's considered legacy. Use{" "}
                     <Styled.InlineCode>createContext</Styled.InlineCode> instead.
                 </Styled.P>
 
@@ -241,7 +234,7 @@ Button.defaultProps = { label: "Click" }; // 😐 avoid`}
             <Styled.Section>
                 <Styled.H2>Event Pooling (historical)</Styled.H2>
                 <Styled.P>
-                    Older React versions “pooled” events, requiring <Styled.InlineCode>event.persist()</Styled.InlineCode> for async access. Modern React no longer pools events—just
+                    Older React versions "pooled" events, requiring <Styled.InlineCode>event.persist()</Styled.InlineCode> for async access. Modern React no longer pools events—just
                     use the event normally.
                 </Styled.P>
             </Styled.Section>

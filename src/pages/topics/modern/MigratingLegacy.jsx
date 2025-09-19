@@ -6,8 +6,8 @@ const MigratingLegacy = () => {
             <Styled.Title>Migrating Legacy React → Modern React</Styled.Title>
 
             <Styled.Lead>
-                “Legacy React” usually means class components, old lifecycles, legacy context,
-                manual side-effect wiring, and assumptions from ReactDOM.render. “Modern React”
+                "Legacy React" usually means class components, old lifecycles, legacy context,
+                manual side-effect wiring, and assumptions from ReactDOM.render. "Modern React"
                 centers on <b>function components + hooks</b>, <b>strict mode</b>, <b>concurrent
                     features</b> (automatic batching, transitions), and <b>Suspense-first data</b>.
                 This guide gives clear steps, definitions, and examples so you can migrate with confidence.
@@ -229,10 +229,10 @@ function Search({ allItems }) {
 
             {/* 8) Suspense mindset */}
             <Styled.Section>
-                <Styled.H2>Step 7 - Think “Suspense-Friendly” (Gradual)</Styled.H2>
+                <Styled.H2>Step 7 - Think "Suspense-Friendly" (Gradual)</Styled.H2>
                 <Styled.List>
-                    <li><b>Suspense:</b> A mechanism where components can “pause” rendering while data loads.</li>
-                    <li><b>Benefit:</b> Cleaner loading states, less prop-drilling of “isLoading”, and better streaming SSR.</li>
+                    <li><b>Suspense:</b> A mechanism where components can "pause" rendering while data loads.</li>
+                    <li><b>Benefit:</b> Cleaner loading states, less prop-drilling of "isLoading", and better streaming SSR.</li>
                     <li><b>Migration approach:</b> Start at feature boundaries; wrap slow trees in <Styled.InlineCode>&lt;Suspense fallback=&quot;…&quot;/&gt;</Styled.InlineCode>.</li>
                 </Styled.List>
                 <Styled.Pre>
