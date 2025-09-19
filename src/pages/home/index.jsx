@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <>
             <Styled.Wrapper>
-                <h3>ReactJS Notes - last updated: Sep 17, 2025</h3>
+                <h3>ReactJS Notes - last updated: Sep 19, 2025</h3>
 
                 <fieldset>
                     <legend>About Project</legend>

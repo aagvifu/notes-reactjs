@@ -206,6 +206,16 @@ const AppManifest = lazy(() => import("./pages/topics/pwa/AppManifest.jsx"));
 const OfflineFallback = lazy(() => import("./pages/topics/pwa/OfflineFallback"));
 const PushNotifs = lazy(() => import("./pages/topics/pwa/PushNotifs"));
 
+const CompoundComponents = lazy(() => import("./pages/topics/architecture/CompoundComponents"));
+const RenderProps = lazy(() => import("./pages/topics/architecture/RenderProps"));
+const ProviderPattern = lazy(() => import("./pages/topics/architecture/ProviderPattern"));
+const StateReducer = lazy(() => import("./pages/topics/architecture/StateReducer"));
+const HeadlessComponents = lazy(() => import("./pages/topics/architecture/HeadlessComponents"));
+const Slots = lazy(() => import("./pages/topics/architecture/Slots"));
+const FeatureFolders = lazy(() => import("./pages/topics/architecture/FeatureFolders"));
+const ApiDesign = lazy(() => import("./pages/topics/architecture/ApiDesign"));
+
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -489,6 +499,17 @@ const App = () => {
                                     <Route path="/pwa/app-manifest" element={<AppManifest />} />
                                     <Route path="/pwa/offline-fallback" element={<OfflineFallback />} />
                                     <Route path="/pwa/push-notifs" element={<PushNotifs />} />
+                                </>
+
+                                <>
+                                    <Route path="/architecture/compound-components" element={<CompoundComponents />} />
+                                    <Route path="/architecture/render-props" element={<RenderProps />} />
+                                    <Route path="/architecture/provider-pattern" element={<ProviderPattern />} />
+                                    <Route path="/architecture/state-reducer" element={<StateReducer />} />
+                                    <Route path="/architecture/headless-components" element={<HeadlessComponents />} />
+                                    <Route path="/architecture/slots" element={<Slots />} />
+                                    <Route path="/architecture/feature-folders" element={<FeatureFolders />} />
+                                    <Route path="/architecture/api-design" element={<ApiDesign />} />
                                 </>
 
                                 {/* 404 */}

@@ -378,6 +378,17 @@ const NavListCore = () => {
                 <NavLink to="/pwa/offline-fallback" title="Offline Fallback">Offline Fallback</NavLink>
                 <NavLink to="/pwa/push-notifs" title="Push Notifications">Push Notifications</NavLink>
 
+                {/* Architecture & Patterns */}
+                <h3 className="title">Architecture &amp; Patterns</h3>
+                <NavLink to="/architecture/compound-components" title="Compound Components">Compound Components</NavLink>
+                <NavLink to="/architecture/render-props" title="Render Props">Render Props</NavLink>
+                <NavLink to="/architecture/provider-pattern" title="Provider Pattern">Provider Pattern</NavLink>
+                <NavLink to="/architecture/state-reducer" title="State Reducer">State Reducer</NavLink>
+                <NavLink to="/architecture/headless-components" title="Headless Components">Headless Components</NavLink>
+                <NavLink to="/architecture/slots" title="Slots">Slots</NavLink>
+                <NavLink to="/architecture/feature-folders" title="Feature Folders">Feature Folders</NavLink>
+                <NavLink to="/architecture/api-design" title="API Design">API Design</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}
