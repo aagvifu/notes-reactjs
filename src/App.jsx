@@ -257,6 +257,13 @@ const SuspenseForData = lazy(() => import("./pages/topics/modern/SuspenseForData
 const MigratingLegacy = lazy(() => import("./pages/topics/modern/MigratingLegacy"));
 const Deprecations = lazy(() => import("./pages/topics/modern/Deprecations"));
 
+const OverContext = lazy(() => import("./pages/topics/anti/OverContext"));
+const OverMemo = lazy(() => import("./pages/topics/anti/OverMemo"));
+const RefsAsState = lazy(() => import("./pages/topics/anti/RefsAsState"));
+const DerivedStatePitfalls = lazy(() => import("./pages/topics/anti/DerivedStatePitfalls"));
+const EffectForFetching = lazy(() => import("./pages/topics/anti/EffectForFetching"));
+const MegaComponents = lazy(() => import("./pages/topics/anti/MegaComponents"));
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -603,6 +610,15 @@ const App = () => {
                                     <Route path="/modern/suspense-for-data" element={<SuspenseForData />} />
                                     <Route path="/modern/migrating-legacy" element={<MigratingLegacy />} />
                                     <Route path="/modern/deprecations" element={<Deprecations />} />
+                                </>
+
+                                <>
+                                    <Route path="/anti/over-context" element={<OverContext />} />
+                                    <Route path="/anti/over-memo" element={<OverMemo />} />
+                                    <Route path="/anti/refs-as-state" element={<RefsAsState />} />
+                                    <Route path="/anti/derived-state-pitfalls" element={<DerivedStatePitfalls />} />
+                                    <Route path="/anti/effect-for-fetching" element={<EffectForFetching />} />
+                                    <Route path="/anti/mega-components" element={<MegaComponents />} />
                                 </>
 
                                 {/* 404 */}

@@ -441,6 +441,15 @@ const NavListCore = () => {
                 <NavLink to="/modern/migrating-legacy" title="Migrating Legacy Apps">Migrating Legacy</NavLink>
                 <NavLink to="/modern/deprecations" title="Deprecations">Deprecations</NavLink>
 
+                {/* Anti-Patterns */}
+                <h3 className="title">Anti-Patterns</h3>
+                <NavLink to="/anti/over-context" title="Over-Context">Over-Context</NavLink>
+                <NavLink to="/anti/over-memo" title="Over-Memo">Over-Memo</NavLink>
+                <NavLink to="/anti/refs-as-state" title="Refs as State">Refs as State</NavLink>
+                <NavLink to="/anti/derived-state-pitfalls" title="Derived State Pitfalls">Derived State Pitfalls</NavLink>
+                <NavLink to="/anti/effect-for-fetching" title="Effect for Fetching">Effect for Fetching</NavLink>
+                <NavLink to="/anti/mega-components" title="Mega Components">Mega Components</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}
