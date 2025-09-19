@@ -1,10 +1,6 @@
 import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Build & DX — Vite Config
- * Beginner-friendly notes: every term defined, practical examples included.
- */
 const ViteConfig = () => {
     return (
         <Styled.Page>

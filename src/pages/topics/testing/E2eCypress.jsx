@@ -1,10 +1,6 @@
 import React from "react";
 import { Styled } from "./styled";
 
-/**
- * End-to-End Testing with Cypress
- * Beginner-friendly notes with precise definitions, patterns, and examples.
- */
 const E2eCypress = () => {
     return (
         <Styled.Page>
@@ -90,7 +86,7 @@ describe('Home Page', () => {
                 <Styled.H2>Stable Selectors</Styled.H2>
                 <Styled.List>
                     <li><b>Do:</b> add <Styled.InlineCode>data-cy</Styled.InlineCode> attributes to important elements.</li>
-                    <li><b>Don’t:</b> rely on CSS classes or text that frequently changes.</li>
+                    <li><b>Don't:</b> rely on CSS classes or text that frequently changes.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// in your app markup
@@ -178,22 +174,22 @@ export default defineConfig({
                 <Styled.H2>Reducing Flaky Tests</Styled.H2>
                 <Styled.List>
                     <li><b>Assert UI that users see:</b> text, roles, visible elements—not internal state.</li>
-                    <li><b>Avoid fixed waits:</b> don’t use <Styled.InlineCode>cy.wait(1000)</Styled.InlineCode>. Prefer query + assertion; Cypress will retry.</li>
+                    <li><b>Avoid fixed waits:</b> don't use <Styled.InlineCode>cy.wait(1000)</Styled.InlineCode>. Prefer query + assertion; Cypress will retry.</li>
                     <li><b>Use stable selectors:</b> <Styled.InlineCode>data-cy</Styled.InlineCode> everywhere critical.</li>
                     <li><b>Control network:</b> mock or seed test data for deterministic scenarios.</li>
                     <li><b>Reset state:</b> use <Styled.InlineCode>cy.session</Styled.InlineCode> and seed/cleanup hooks if your app stores auth or data.</li>
                 </Styled.List>
             </Styled.Section>
 
-            {/* 10) Do / Don’t */}
+            {/* 10) Do / Don't */}
             <Styled.Section>
-                <Styled.H2>Do &amp; Don’t</Styled.H2>
+                <Styled.H2>Do &amp; Don't</Styled.H2>
                 <Styled.List>
                     <li><b>Do</b> keep E2E specs small and focused on critical user flows.</li>
                     <li><b>Do</b> prefer semantic/role queries for accessibility.</li>
                     <li><b>Do</b> isolate “mocked” vs “real API” specs to make failures meaningful.</li>
-                    <li><b>Don’t</b> test implementation details (classes, internals).</li>
-                    <li><b>Don’t</b> stack multiple unrelated assertions in one test—failures become hard to debug.</li>
+                    <li><b>Don't</b> test implementation details (classes, internals).</li>
+                    <li><b>Don't</b> stack multiple unrelated assertions in one test—failures become hard to debug.</li>
                 </Styled.List>
             </Styled.Section>
 

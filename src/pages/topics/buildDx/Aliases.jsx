@@ -1,10 +1,6 @@
 import React from "react";
 import { Styled } from "./styled";
 
-/**
- * Aliases (Build & DX)
- * Beginner-friendly guide to import path aliases in Vite + React.
- */
 const Aliases = () => {
     return (
         <Styled.Page>

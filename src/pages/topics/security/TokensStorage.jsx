@@ -1,11 +1,6 @@
 import React from "react";
 import { Styled } from "./styled";
 
-/**
- * SECURITY — Tokens Storage
- * Beginner-friendly notes covering WHAT, WHY, WHERE to store tokens,
- * common risks (XSS/CSRF), and two practical patterns (memory + refresh cookie, and cookie-only session).
- */
 const TokensStorage = () => {
     return (
         <Styled.Page>

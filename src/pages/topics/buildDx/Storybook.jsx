@@ -25,7 +25,7 @@ const Storybook = () => {
 
             {/* 2) Key Terms */}
             <Styled.Section>
-                <Styled.H2>Glossary (beginner-friendly)</Styled.H2>
+                <Styled.H2>Glossary</Styled.H2>
                 <Styled.List>
                     <li><b>Story:</b> a named example of a component in a specific state (e.g., “Button/Primary”).</li>
                     <li><b>CSF (Component Story Format):</b> the standard JS/TS module format where you <i>export</i> a default <Styled.InlineCode>meta</Styled.InlineCode> and named stories.</li>

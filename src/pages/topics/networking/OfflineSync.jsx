@@ -278,8 +278,7 @@ function resolve(clientDoc, serverDoc) {
 
             <Styled.Callout>
                 Summary: implement <b>cache for reads</b> and an <b>outbox for writes</b>, detect network status,
-                retry with idempotency and backoff, and resolve conflicts predictably. That's a robust, beginner-friendly
-                Offline Sync foundation.
+                retry with idempotency and backoff, and resolve conflicts predictably. That's a robust Offline Sync foundation.
             </Styled.Callout>
         </Styled.Page>
     );

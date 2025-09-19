@@ -1,11 +1,6 @@
-// src/pages/topics/ssrRsc/SeoMeta.jsx
 import React from "react";
 import { Styled } from "./styled";
 
-/**
- * SeoMeta — SSR & RSC Concepts → SEO & Metadata
- * Beginner-friendly, with definitions and practical SPA/SSR notes.
- */
 const SeoMeta = () => {
     return (
         <Styled.Page>
@@ -106,13 +101,13 @@ const SeoMeta = () => {
                 </Styled.List>
                 <Styled.Pre>
                     {`<meta property="og:title" content="React Notes — SEO & Metadata" />
-<meta property="og:description" content="A beginner-friendly guide to SEO tags in React." />
+<meta property="og:description" content="A guide to SEO tags in React." />
 <meta property="og:url" content="https://example.com/ssr-rsc/seo-meta" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="https://example.com/og/seo-meta.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="React Notes — SEO & Metadata" />
-<meta name="twitter:description" content="A beginner-friendly guide to SEO tags in React." />
+<meta name="twitter:description" content="A guide to SEO tags in React." />
 <meta name="twitter:image" content="https://example.com/og/seo-meta.png" />`}
                 </Styled.Pre>
             </Styled.Section>
@@ -180,7 +175,7 @@ function useMeta({ title, description, canonical, robots }) {
 export default function SeoMetaPage() {
   useMeta({
     title: "SEO & Metadata — React Notes",
-    description: "Beginner-friendly guide to head tags, social cards, and JSON-LD.",
+    description: "Guide to head tags, social cards, and JSON-LD.",
     canonical: "https://example.com/ssr-rsc/seo-meta",
     robots: "index,follow"
   });

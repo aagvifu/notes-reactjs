@@ -59,7 +59,7 @@ function DropTarget() {
             {/* 3) Example: Reorder list (mouse) */}
             <Styled.Section>
                 <Styled.H2>Example: Reorder list (mouse, native DnD)</Styled.H2>
-                <Styled.Small>Beginner-friendly reordering using <code>draggable</code>. Also provide buttons for keyboard users (see a11y).</Styled.Small>
+                <Styled.Small>Reordering using <code>draggable</code>. Also provide buttons for keyboard users (see a11y).</Styled.Small>
                 <Styled.Pre>
                     {`import React from "react";
 

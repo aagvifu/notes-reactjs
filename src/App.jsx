@@ -200,6 +200,13 @@ const WebSockets = lazy(() => import("./pages/topics/networking/WebSockets"));
 const FileUploads = lazy(() => import("./pages/topics/networking/FileUploads"));
 const OfflineSync = lazy(() => import("./pages/topics/networking/OfflineSync"));
 
+const ServiceWorker = lazy(() => import("./pages/topics/pwa/ServiceWorker"));
+const CachingStrategies = lazy(() => import("./pages/topics/pwa/CachingStrategies"));
+const AppManifest = lazy(() => import("./pages/topics/pwa/AppManifest.jsx"));
+const OfflineFallback = lazy(() => import("./pages/topics/pwa/OfflineFallback"));
+const PushNotifs = lazy(() => import("./pages/topics/pwa/PushNotifs"));
+
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -474,6 +481,14 @@ const App = () => {
                                     <Route path="/networking/websockets" element={<WebSockets />} />
                                     <Route path="/networking/file-uploads" element={<FileUploads />} />
                                     <Route path="/networking/offline-sync" element={<OfflineSync />} />
+                                </>
+
+                                <>
+                                    <Route path="/pwa/service-worker" element={<ServiceWorker />} />
+                                    <Route path="/pwa/caching-strategies" element={<CachingStrategies />} />
+                                    <Route path="/pwa/app-manifest" element={<AppManifest />} />
+                                    <Route path="/pwa/offline-fallback" element={<OfflineFallback />} />
+                                    <Route path="/pwa/push-notifs" element={<PushNotifs />} />
                                 </>
 
                                 {/* 404 */}

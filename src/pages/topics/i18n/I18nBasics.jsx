@@ -80,7 +80,7 @@ export function formatMessage(locale, key, vars = {}, fallbackLocale = "en") {
 
             {/* 4) Plurals the right way */}
             <Styled.Section>
-                <Styled.H2>Plural Rules (Beginner Friendly)</Styled.H2>
+                <Styled.H2>Plural Rules</Styled.H2>
                 <Styled.List>
                     <li><b>Plural forms:</b> Languages don't share the same plural logic (some have 2, others 3+). Don't concatenate strings; select the right message per rule.</li>
                     <li><b>Intl.PluralRules:</b> Picks a category (<Styled.InlineCode>zero/one/two/few/many/other</Styled.InlineCode>) for a number in a locale.</li>

@@ -370,6 +370,14 @@ const NavListCore = () => {
                 <NavLink to="/networking/file-uploads" title="File Uploads">File Uploads</NavLink>
                 <NavLink to="/networking/offline-sync" title="Offline Sync">Offline Sync</NavLink>
 
+                {/* PWA */}
+                <h3 className="title">PWA</h3>
+                <NavLink to="/pwa/service-worker" title="Service Worker">Service Worker</NavLink>
+                <NavLink to="/pwa/caching-strategies" title="Caching Strategies">Caching Strategies</NavLink>
+                <NavLink to="/pwa/app-manifest" title="App Manifest">App Manifest</NavLink>
+                <NavLink to="/pwa/offline-fallback" title="Offline Fallback">Offline Fallback</NavLink>
+                <NavLink to="/pwa/push-notifs" title="Push Notifications">Push Notifications</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}

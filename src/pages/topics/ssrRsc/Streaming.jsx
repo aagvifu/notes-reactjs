@@ -15,7 +15,7 @@ const Streaming = () => {
 
             {/* 1) Core definitions */}
             <Styled.Section>
-                <Styled.H2>Core Definitions (Beginner Friendly)</Styled.H2>
+                <Styled.H2>Core Definitions</Styled.H2>
                 <Styled.List>
                     <li><b>SSR (Server-Side Rendering):</b> HTML is rendered on the server and sent to the browser.</li>
                     <li><b>Hydration:</b> the process where React attaches event handlers to already-rendered HTML so it becomes interactive.</li>
