@@ -237,6 +237,11 @@ const MediaAudioVideo = lazy(() => import("./pages/topics/integrations/MediaAudi
 const CanvasWebGL = lazy(() => import("./pages/topics/integrations/CanvasWebGL"));
 const Workers = lazy(() => import("./pages/topics/integrations/Workers"));
 
+const DevTools = lazy(() => import("./pages/topics/tooling/DevTools"));
+const VSCodeSetup = lazy(() => import("./pages/topics/tooling/VSCodeSetup"));
+const Snippets = lazy(() => import("./pages/topics/tooling/Snippets"));
+const LintRules = lazy(() => import("./pages/topics/tooling/LintRules"));
+const CodeMetrics = lazy(() => import("./pages/topics/tooling/CodeMetrics"));
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -558,6 +563,14 @@ const App = () => {
                                     <Route path="/integrations/media-audio-video" element={<MediaAudioVideo />} />
                                     <Route path="/integrations/canvas-webgl" element={<CanvasWebGL />} />
                                     <Route path="/integrations/workers" element={<Workers />} />
+                                </>
+
+                                <>
+                                    <Route path="/tooling/devtools" element={<DevTools />} />
+                                    <Route path="/tooling/vscode-setup" element={<VSCodeSetup />} />
+                                    <Route path="/tooling/snippets" element={<Snippets />} />
+                                    <Route path="/tooling/lint-rules" element={<LintRules />} />
+                                    <Route path="/tooling/code-metrics" element={<CodeMetrics />} />
                                 </>
 
                                 {/* 404 */}

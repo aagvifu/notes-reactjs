@@ -415,6 +415,13 @@ const NavListCore = () => {
                 <NavLink to="/integrations/canvas-webgl" title="Canvas & WebGL">Canvas &amp; WebGL</NavLink>
                 <NavLink to="/integrations/workers" title="Workers (Web/Service)">Workers</NavLink>
 
+                {/* Tooling Around React */}
+                <h3 className="title">Tooling Around React</h3>
+                <NavLink to="/tooling/devtools" title="DevTools">DevTools</NavLink>
+                <NavLink to="/tooling/vscode-setup" title="VS Code Setup">VS Code Setup</NavLink>
+                <NavLink to="/tooling/snippets" title="Snippets">Snippets</NavLink>
+                <NavLink to="/tooling/lint-rules" title="Lint Rules">Lint Rules</NavLink>
+                <NavLink to="/tooling/code-metrics" title="Code Metrics">Code Metrics</NavLink>
 
             </div>
 
