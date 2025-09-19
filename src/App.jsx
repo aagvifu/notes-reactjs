@@ -251,6 +251,12 @@ const EnvPerEnv = lazy(() => import("./pages/topics/deploy/EnvPerEnv"));
 const CacheControl = lazy(() => import("./pages/topics/deploy/CacheControl"));
 const ProdMonitoring = lazy(() => import("./pages/topics/deploy/ProdMonitoring"));
 
+const ConcurrentModel = lazy(() => import("./pages/topics/modern/ConcurrentModel"));
+const Transitions = lazy(() => import("./pages/topics/modern/Transitions"));
+const SuspenseForData = lazy(() => import("./pages/topics/modern/SuspenseForData"));
+const MigratingLegacy = lazy(() => import("./pages/topics/modern/MigratingLegacy"));
+const Deprecations = lazy(() => import("./pages/topics/modern/Deprecations"));
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -589,6 +595,14 @@ const App = () => {
                                     <Route path="/deploy/env-per-env" element={<EnvPerEnv />} />
                                     <Route path="/deploy/cache-control" element={<CacheControl />} />
                                     <Route path="/deploy/prod-monitoring" element={<ProdMonitoring />} />
+                                </>
+
+                                <>
+                                    <Route path="/modern/concurrent-model" element={<ConcurrentModel />} />
+                                    <Route path="/modern/transitions" element={<Transitions />} />
+                                    <Route path="/modern/suspense-for-data" element={<SuspenseForData />} />
+                                    <Route path="/modern/migrating-legacy" element={<MigratingLegacy />} />
+                                    <Route path="/modern/deprecations" element={<Deprecations />} />
                                 </>
 
                                 {/* 404 */}

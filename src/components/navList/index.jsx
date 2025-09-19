@@ -433,6 +433,14 @@ const NavListCore = () => {
                 <NavLink to="/deploy/cache-control" title="Cache-Control">Cache-Control</NavLink>
                 <NavLink to="/deploy/prod-monitoring" title="Production Monitoring">Production Monitoring</NavLink>
 
+                {/* Modern React */}
+                <h3 className="title">Modern React</h3>
+                <NavLink to="/modern/concurrent-model" title="Concurrent Model">Concurrent Model</NavLink>
+                <NavLink to="/modern/transitions" title="Transitions">Transitions</NavLink>
+                <NavLink to="/modern/suspense-for-data" title="Suspense for Data">Suspense for Data</NavLink>
+                <NavLink to="/modern/migrating-legacy" title="Migrating Legacy Apps">Migrating Legacy</NavLink>
+                <NavLink to="/modern/deprecations" title="Deprecations">Deprecations</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}
