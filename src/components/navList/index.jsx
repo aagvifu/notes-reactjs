@@ -423,6 +423,16 @@ const NavListCore = () => {
                 <NavLink to="/tooling/lint-rules" title="Lint Rules">Lint Rules</NavLink>
                 <NavLink to="/tooling/code-metrics" title="Code Metrics">Code Metrics</NavLink>
 
+                {/* Deployment */}
+                <h3 className="title">Deployment</h3>
+                <NavLink to="/deploy/gh-pages" title="GitHub Pages">GitHub Pages</NavLink>
+                <NavLink to="/deploy/vercel" title="Vercel">Vercel</NavLink>
+                <NavLink to="/deploy/netlify" title="Netlify">Netlify</NavLink>
+                <NavLink to="/deploy/cf-pages" title="Cloudflare Pages">Cloudflare Pages</NavLink>
+                <NavLink to="/deploy/env-per-env" title="Env per Environment">Env per Environment</NavLink>
+                <NavLink to="/deploy/cache-control" title="Cache-Control">Cache-Control</NavLink>
+                <NavLink to="/deploy/prod-monitoring" title="Production Monitoring">Production Monitoring</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}

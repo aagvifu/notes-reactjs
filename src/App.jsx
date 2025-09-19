@@ -243,6 +243,14 @@ const Snippets = lazy(() => import("./pages/topics/tooling/Snippets"));
 const LintRules = lazy(() => import("./pages/topics/tooling/LintRules"));
 const CodeMetrics = lazy(() => import("./pages/topics/tooling/CodeMetrics"));
 
+const GhPages = lazy(() => import("./pages/topics/deploy/GhPages"));
+const Vercel = lazy(() => import("./pages/topics/deploy/Vercel"));
+const Netlify = lazy(() => import("./pages/topics/deploy/Netlify"));
+const CfPages = lazy(() => import("./pages/topics/deploy/CfPages"));
+const EnvPerEnv = lazy(() => import("./pages/topics/deploy/EnvPerEnv"));
+const CacheControl = lazy(() => import("./pages/topics/deploy/CacheControl"));
+const ProdMonitoring = lazy(() => import("./pages/topics/deploy/ProdMonitoring"));
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -571,6 +579,16 @@ const App = () => {
                                     <Route path="/tooling/snippets" element={<Snippets />} />
                                     <Route path="/tooling/lint-rules" element={<LintRules />} />
                                     <Route path="/tooling/code-metrics" element={<CodeMetrics />} />
+                                </>
+
+                                <>
+                                    <Route path="/deploy/gh-pages" element={<GhPages />} />
+                                    <Route path="/deploy/vercel" element={<Vercel />} />
+                                    <Route path="/deploy/netlify" element={<Netlify />} />
+                                    <Route path="/deploy/cf-pages" element={<CfPages />} />
+                                    <Route path="/deploy/env-per-env" element={<EnvPerEnv />} />
+                                    <Route path="/deploy/cache-control" element={<CacheControl />} />
+                                    <Route path="/deploy/prod-monitoring" element={<ProdMonitoring />} />
                                 </>
 
                                 {/* 404 */}
