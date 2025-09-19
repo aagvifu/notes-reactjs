@@ -229,6 +229,14 @@ const List = lazy(() => import("./pages/topics/componentsLib/List"));
 const Toast = lazy(() => import("./pages/topics/componentsLib/Toast"));
 const Pagination = lazy(() => import("./pages/topics/componentsLib/Pagination"));
 
+const Charts = lazy(() => import("./pages/topics/integrations/Charts"));
+const Maps = lazy(() => import("./pages/topics/integrations/Maps"));
+const Payments = lazy(() => import("./pages/topics/integrations/Payments"));
+const AuthProviders = lazy(() => import("./pages/topics/integrations/AuthProviders"));
+const MediaAudioVideo = lazy(() => import("./pages/topics/integrations/MediaAudioVideo"));
+const CanvasWebGL = lazy(() => import("./pages/topics/integrations/CanvasWebGL"));
+const Workers = lazy(() => import("./pages/topics/integrations/Workers"));
+
 
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
@@ -539,6 +547,17 @@ const App = () => {
                                     <Route path="/components-lib/list" element={<List />} />
                                     <Route path="/components-lib/toast" element={<Toast />} />
                                     <Route path="/components-lib/pagination" element={<Pagination />} />
+                                </>
+
+                                <>
+                                    {/* External Integrations */}
+                                    <Route path="/integrations/charts" element={<Charts />} />
+                                    <Route path="/integrations/maps" element={<Maps />} />
+                                    <Route path="/integrations/payments" element={<Payments />} />
+                                    <Route path="/integrations/auth-providers" element={<AuthProviders />} />
+                                    <Route path="/integrations/media-audio-video" element={<MediaAudioVideo />} />
+                                    <Route path="/integrations/canvas-webgl" element={<CanvasWebGL />} />
+                                    <Route path="/integrations/workers" element={<Workers />} />
                                 </>
 
                                 {/* 404 */}

@@ -405,6 +405,17 @@ const NavListCore = () => {
                 <NavLink to="/components-lib/toast" title="Toast">Toast</NavLink>
                 <NavLink to="/components-lib/pagination" title="Pagination">Pagination</NavLink>
 
+                {/* External Integrations */}
+                <h3 className="title">External Integrations</h3>
+                <NavLink to="/integrations/charts" title="Charts">Charts</NavLink>
+                <NavLink to="/integrations/maps" title="Maps">Maps</NavLink>
+                <NavLink to="/integrations/payments" title="Payments">Payments</NavLink>
+                <NavLink to="/integrations/auth-providers" title="Auth Providers">Auth Providers</NavLink>
+                <NavLink to="/integrations/media-audio-video" title="Media · Audio/Video">Media · Audio/Video</NavLink>
+                <NavLink to="/integrations/canvas-webgl" title="Canvas & WebGL">Canvas &amp; WebGL</NavLink>
+                <NavLink to="/integrations/workers" title="Workers (Web/Service)">Workers</NavLink>
+
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}
