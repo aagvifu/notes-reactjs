@@ -264,6 +264,12 @@ const DerivedStatePitfalls = lazy(() => import("./pages/topics/anti/DerivedState
 const EffectForFetching = lazy(() => import("./pages/topics/anti/EffectForFetching"));
 const MegaComponents = lazy(() => import("./pages/topics/anti/MegaComponents"));
 
+const GoodReadme = lazy(() => import("./pages/topics/docs/GoodReadme"));
+const Adrs = lazy(() => import("./pages/topics/docs/Adrs"));
+const StorybookMdx = lazy(() => import("./pages/topics/docs/StorybookMdx"));
+const PrReviews = lazy(() => import("./pages/topics/docs/PrReviews"));
+const Conventions = lazy(() => import("./pages/topics/docs/Conventions"));
+
 const App = () => {
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
@@ -619,6 +625,14 @@ const App = () => {
                                     <Route path="/anti/derived-state-pitfalls" element={<DerivedStatePitfalls />} />
                                     <Route path="/anti/effect-for-fetching" element={<EffectForFetching />} />
                                     <Route path="/anti/mega-components" element={<MegaComponents />} />
+                                </>
+
+                                <>
+                                    <Route path="/docs/good-readme" element={<GoodReadme />} />
+                                    <Route path="/docs/adrs" element={<Adrs />} />
+                                    <Route path="/docs/storybook-mdx" element={<StorybookMdx />} />
+                                    <Route path="/docs/pr-reviews" element={<PrReviews />} />
+                                    <Route path="/docs/conventions" element={<Conventions />} />
                                 </>
 
                                 {/* 404 */}

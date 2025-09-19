@@ -450,6 +450,14 @@ const NavListCore = () => {
                 <NavLink to="/anti/effect-for-fetching" title="Effect for Fetching">Effect for Fetching</NavLink>
                 <NavLink to="/anti/mega-components" title="Mega Components">Mega Components</NavLink>
 
+                {/* Docs & Collaboration */}
+                <h3 className="title">Docs &amp; Collaboration</h3>
+                <NavLink to="/docs/good-readme" title="Good README">Good README</NavLink>
+                <NavLink to="/docs/adrs" title="Architectural Decision Records (ADRs)">ADRs</NavLink>
+                <NavLink to="/docs/storybook-mdx" title="Storybook + MDX">Storybook + MDX</NavLink>
+                <NavLink to="/docs/pr-reviews" title="PR Reviews">PR Reviews</NavLink>
+                <NavLink to="/docs/conventions" title="Conventions">Conventions</NavLink>
+
             </div>
 
             {/* Minimal CSS hook: hide elements with data-hidden="true" if your Styled.Nav doesn't already */}
